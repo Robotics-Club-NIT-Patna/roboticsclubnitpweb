@@ -1,0 +1,138 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #000;
+}
+
+.container
+{
+ position: relative;
+ width: 300px;
+ height: 300px;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ padding: auto;
+}
+.container .card
+{
+ position: relative;
+ width: 100%;
+ height:100%;
+ background: #fff;
+ margin: auto;
+ margin-bottom: 10%;
+ margin-top: 10%;
+ border-radius: 20px;
+ overflow: hidden;
+ box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+ transition: 0.5s;
+ background-color: grey;
+}
+.space{
+    margin:5%;
+    color: rgb(255, 95, 95);
+    background: -webkit-linear-gradient(white,rgb(255,65,65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+}
+/* .hover-img a { position: center;}
+.hover-img a span { 
+    position: absolute;
+    display: none;
+    z-index: 99;
+    height: 100vh;
+    width: 100vh;
+}
+.hover-img a:hover span {
+    display:flexbox;
+    height: 100%;
+    width: 100%;
+} */
+.container:hover .card
+{
+ filter: blur(20px);
+ transform: scale(1.2);
+ opacity: 1;
+ 
+ 
+}
+.card:hover .text{
+  display: none;
+}
+.container .card:hover
+{
+ filter: blur(0px);
+ transform: scale(1.1);
+ opacity: 1;
+
+}
+.container:hover .hover-img{
+  /* min-height: fit-content;
+  min-block-size: 0%; */
+  height: fit-content;
+  width: fit-content;
+  display: flexbox;
+  flex-wrap: wrap;
+  width: 100%;
+height: 100%;
+}
+.container .card .circle
+{
+position: relative;
+
+
+clip-path: circle(200%);
+text-align: center;
+}
+.container .card .circle h2
+{
+ color:rgb(255, 95, 95);
+ font-size: 3em;
+ padding:50px 0;
+}
+.container .card .content
+{
+ position: absolute;
+ bottom: 10px;
+ page-break-after: 20px;
+ text-align: center;
+}
+.container .card .content:hover  .photos
+{
+ color: #666;
+}
+.photos{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%;
+  width: 100%; */
+  
+  opacity: 0;
+  transition: .2s;
+  
+  
+}
+.container .card .content:hover .photos
+{
+  opacity: 1;
+  
+}
+
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a
+{
+ background: gray;
+} 
+
