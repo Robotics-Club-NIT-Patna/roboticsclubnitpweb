@@ -23,7 +23,7 @@ const Header = () => {
                     
                         <Link to='/'><span>01 </span>Home</Link>
                         <Link to='/about'><span>02 </span>About Us</Link>
-                        <Link to='/team'><span>03 </span>Contact</Link>
+                        <Link to='/events'><span>03 </span>Contact</Link>
                         <Link to='/team'><span>04 </span>Team</Link>
                         <Link><span>05 </span>News</Link>
                    

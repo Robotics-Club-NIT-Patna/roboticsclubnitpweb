@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Teams from './Components/Teams/Teams';
 import About from './Components/About/About';
+import Event from './Components/Events/Event';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
         <Route  exact path='/about'>
           <About/>
+        </Route>
+
+        <Route  exact path='/events'>
+          <Event />
         </Route>
       </Switch>
       

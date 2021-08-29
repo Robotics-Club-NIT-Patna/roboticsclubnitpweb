@@ -1,0 +1,69 @@
+.flex{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.event-card{
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    justify-content: space-around;
+    padding: 15px 30px;
+    height: 60vh;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+    background-color: black;
+}
+.event-card__image{
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+.event-card__image>img{
+    object-fit: contain;
+    height: 90%;
+    width: 100%;
+}
+.event-card__details{
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0px 30px;
+    padding-right: 20px;
+}
+.event-card__details-reward{
+    margin: 20px 0px;
+}
+.event-card__details-register > span > a{
+    text-decoration: none;
+    color: #007bff;
+}
+.event-card__details-register > span > a:hover{
+    text-decoration: underline;
+}
+.event-card__details-reward-list{
+    margin-left: 25px;
+}
+@media (max-width: 1120px) {
+    .event-card{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .event-card{
+        font-size: 1.2rem;
+        padding: 10px;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto 1fr;
+    }
+    .event-card__details{
+        padding: 8px;
+    }
+    .event-card__image{
+        margin-right: 0;
+    }
+    .event-card__image>img{
+        height: 100%;
+    }
+}
