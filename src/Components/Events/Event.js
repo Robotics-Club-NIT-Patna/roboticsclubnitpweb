@@ -25,9 +25,14 @@ function Event(props) {
                         <div className="event-card__details-reward">
                             <p>Rewards</p>
                             <ul className="event-card__details-reward-list">
-                                <Reward reward="Swag Kits containing Tech-Stickers and Key-chains" />
-                                <Reward reward="Egghead Io’s free 1-year codes" />
-                                <Reward reward="Code for Cause Discount Coupons" />
+                                {     
+                                        sampleEvent.rewards.map(reward => {
+                                            return <Reward 
+                                            key={sampleEvent.id} 
+                                            reward={reward} />
+                                        })  
+                                }
+                                
                             </ul>
                         </div>
 
