@@ -3,17 +3,25 @@
  justify-content: center;
  align-items: center;
 }
+.heading{
+    background-color: black;
+    margin: 5px 0px;
+}
+.heading >h3{
+    font-size: 2rem;
+    color: #93cddd;
+    padding: 10px 0px;
+}
 .event-card{
-    border: 3px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr );
     justify-content: space-around;
-    padding: 15px 30px;
+    padding: 5px 30px;
     height: 60vh;
+    height: auto;
     font-size: 1.2rem;
     font-weight: 300;
     color: white;
-    background-color: black;
 }
 .event-card__image{
     padding: 0px 10px;
@@ -21,8 +29,15 @@
 }
 .event-card__image>img{
     object-fit: contain;
-    height: 90%;
+    height: auto;
     width: 100%;
+    border-radius: 2px;
+}
+.event-card__image>img:hover{
+    box-shadow:
+    0 0 6px 3px #fff,  
+    0 0 10px 6px #f0f, 
+    0 0 14px 9px #0ff; 
 }
 .event-card__details{
     flex-direction: column;
@@ -30,6 +45,9 @@
     align-items: flex-start;
     padding: 0px 30px;
     padding-right: 20px;
+}
+.event-card__details-paragraph{
+    white-space: pre-wrap;
 }
 .event-card__details-reward{
     margin: 20px 0px;
@@ -40,10 +58,25 @@
 }
 .event-card__details-register > span > a:hover{
     text-decoration: underline;
+    font-size: 1.2em;
 }
 .event-card__details-reward-list{
     margin-left: 25px;
 }
+
+.skeleton{
+    animation: skeleton-loading linear alternate 1s infinite;
+    opacity: .7;
+}
+@keyframes skeleton-loading {
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
 @media (max-width: 1120px) {
     .event-card{
         font-size: 0.9rem;
