@@ -6,6 +6,7 @@ function Event(props) {
     const { sampleEvent } = props
     return (
         <div>
+            <div class = "space">EVENTS</div>
             <div className="heading">
                 <h3>{sampleEvent.heading}</h3>
                 <div className="event-card">

@@ -49,6 +49,4 @@ const sampleEvent = {
     heading : "Digital Detective",
     rewards : ["Swag Kits containing Tech-Stickers and Key-chains","Egghead Io’s free 1-year codes","Code for Cause Discount Coupons"]
   }
-
-
 export default App;
