@@ -5,7 +5,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Teams from './Components/Teams/Teams';
 import About from './Components/About/About';
-
+import News from './Components/News/News'
 function App() {
   return (
     <div className="App">
@@ -22,6 +22,11 @@ function App() {
 
         <Route  exact path='/about'>
           <About/>
+        </Route>
+
+
+        <Route  exact path='/news'>
+          <News/>
         </Route>
       </Switch>
       

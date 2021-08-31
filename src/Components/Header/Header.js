@@ -25,7 +25,7 @@ const Header = () => {
                         <Link to='/about'><span>02 </span>About Us</Link>
                         <Link to='/team'><span>03 </span>Contact</Link>
                         <Link to='/team'><span>04 </span>Team</Link>
-                        <Link><span>05 </span>News</Link>
+                        <Link to='/news'><span>05 </span>News</Link>
                    
                 </div>
                 <div className="menu_right">
