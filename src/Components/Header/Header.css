@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background-color: transparent;
   left: auto;
@@ -24,7 +24,7 @@
   padding-left: 50px;
 }
 .headercontainer > .medium {
-  width: 144px;
+  width: 192px;
   height: 144px;
   object-fit: contain;
 }
@@ -78,7 +78,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 55%;
+  width: 60%;
   background-color: #f9224b;
   height: 100vh;
   transform: translateY(-100vh);
@@ -205,7 +205,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 45%;
+  width: 50%;
   background-color: #000;
   height: 100vh;
   transform: translateX(100%);
@@ -295,5 +295,13 @@
 
   .menu_left > a:hover {
     margin-left: 50px;
+  }
+}
+
+@media (max-width: 280px) {
+  .big {
+    width: 144px;
+    height: 144px;
+    object-fit: contain;
   }
 }
