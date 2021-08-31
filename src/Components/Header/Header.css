@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background-color: transparent;
   left: auto;
@@ -24,7 +24,7 @@
   padding-left: 50px;
 }
 .headercontainer > .medium {
-  width: 144px;
+  width: 192px;
   height: 144px;
   object-fit: contain;
 }
@@ -61,24 +61,13 @@
   margin-top: -20px;
 }
 
-.toggler {
-  position: absolute;
-  right: 1.5rem;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  z-index: 4;
-  cursor: pointer;
-}
-
 .hamburger {
   position: absolute;
   right: 1.5rem;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,30 +112,38 @@
   top: 10px;
 }
 
-.toggler:checked + .hamburger > .normal {
+.active_normal {
   transform: rotate(135deg);
 }
 
-.toggler:checked:hover + .hamburger > .normal {
-  transform: rotate(225deg);
-}
-.toggler:checked:hover + .hamburger > .fade {
-  transform: rotate(-45deg);
-}
-.toggler:checked + .hamburger > .normal::after,
-.toggler:checked + .hamburger > .normal::before {
-  opacity: 0;
+.active_fade {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #f9224b;
+  transition: 0.4s;
+  transform: rotate(-135deg);
+  opacity: 1;
 }
 
-.toggler:checked + .hamburger > .fade {
-  opacity: 1;
+.hamburger:hover .active_normal {
+  transform: rotate(225deg);
+}
+.hamburger:hover .active_fade {
+  transform: rotate(-45deg);
+}
+
+.active_normal::after,
+.active_normal::before {
+  opacity: 0;
 }
 
 .menu_left {
   position: absolute;
   left: 0;
   top: 0;
-  width: 55%;
+  width: 60%;
   background-color: #f9224b;
   height: 100vh;
   transform: translateY(-100vh);
@@ -205,7 +202,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 45%;
+  width: 50%;
   background-color: #000;
   height: 100vh;
   transform: translateX(100%);
@@ -218,13 +215,13 @@
   padding-left: 100px;
 }
 
-.toggler:checked ~ .menu_left,
-.toggler:checked ~ .menu_right {
+.menu_left_active,
+.menu_right_active {
   transform: translateY(0vh) translateX(0%);
   opacity: 1;
 }
 
-.toggler:checked ~ .menu_left > a {
+.menu_left_active > a {
   padding-bottom: 0;
   opacity: 1;
 }
@@ -285,15 +282,19 @@
     margin-left: 0;
   }
 
-  .toggler {
-    background-color: black;
-  }
-
   .hamburger {
     background-color: black;
   }
 
   .menu_left > a:hover {
     margin-left: 50px;
+  }
+}
+
+@media (max-width: 280px) {
+  .big {
+    width: 144px;
+    height: 144px;
+    object-fit: contain;
   }
 }

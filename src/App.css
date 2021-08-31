@@ -12,3 +12,7 @@
   align-items: center;
   color: white;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

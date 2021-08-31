@@ -1,3 +1,133 @@
 .home {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-image: url("../../1590427934868.jpeg");
+  background-size: contain; */
+}
+
+@font-face {
+  font-family: "neon";
+  src: url("../../hello-denver-display/hellodenverdisplayregular_v1.6.ttf");
+}
+
+.home .container {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home .svgLogo {
+  width: 50vw;
+  position: absolute;
+  right: 1rem;
+}
+
+.home .heading2 {
+  font-family: "neon";
+  font-size: 58px;
+  text-align: left;
+  /* text-shadow: -1px -1px 0 #f9224b, 1px -1px 0 #f9224b, -1px 1px 0 #f9224b,
+    1px 1px 0 #f9224b; */
+  /* color: #f9224b; */
+}
+
+.home .heading1 {
+  font-family: "neon";
+  font-size: 68px;
+  color: white;
+  /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff; */
+  animation: flicker1 1.5s infinite alternate;
+}
+
+@keyframes flicker1 {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0.1vw 0vw 0vw #e41f43, 0.2vw 0vw 0vw #e41f43,
+      0.4vw 0vw 0vw #e41f43, 0.1vw 0vw 0.1vw #e41f43, 0.2vw 0vw 0.1vw #e41f43,
+      0.4vw 0vw 0.1vw #e41f43, 0.1vw 0vw 2vw #e41f43, 0.2vw 0vw 2vw #e41f43,
+      0.4vw 0vw 2vw #e41f43, 0.1vw 0vw 1vw #f9224b, 0.2vw 0vw 1vw #f9224b,
+      0.4vw 0vw 3vw #f9224b, 0.1vw 0vw 3vw #f9224b, 0.2vw 0vw 3vw #f9224b,
+      0.4vw 0vw 3vw #f9224b, 0.1vw 0vw 5vw #f9224b, 0.2vw 0vw 30vw #f9224b,
+      0.4vw 0vw 20vw #f9224b;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home .heading1 {
+    font-size: 54px;
+  }
+  .home .heading2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .heading1 {
+    font-size: 34px;
+  }
+
+  .home .heading2 {
+    font-size: 28px;
+  }
+
+  .home .svgLogo {
+    width: 50vh;
+  }
+}
+
+@media (max-width: 370px) {
+  .home .svgLogo {
+    width: 40vh;
+  }
+  .home .heading1 {
+    font-size: 30px;
+  }
+
+  .home .heading2 {
+    font-size: 24px;
+  }
+}
+
+/* @media (min-height: 812px) {
+  .home .svgLogo {
+    width: 40vh;
+  }
+}
+
+@media (min-height: 1366px) {
+  .home .svgLogo {
+    width: 70vh;
+  }
+} */
+
+@media (max-width: 280px) {
+  .home .svgLogo {
+    width: 37vh;
+  }
+
+  .home .heading1 {
+    font-size: 28px;
+  }
+
+  .home .heading2 {
+    font-size: 22px;
+  }
 }
