@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Teams from './Components/Teams/Teams';
 import About from './Components/About/About';
+import News from './Components/News/News'
 import Event from './Components/Events/Event';
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
           <About/>
         </Route>
 
+
+        <Route  exact path='/news'>
+          <News/>
+        </Route>
+        
         <Route  exact path='/events'>
           <Event
             sampleEvent={sampleEvent}
