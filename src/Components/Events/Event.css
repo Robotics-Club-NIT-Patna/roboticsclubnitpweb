@@ -6,21 +6,25 @@
 .heading{
     background-color: black;
     margin: 5px 0px;
+    font-size: 1.2em;
+    text-align: right;
+    padding-right: 10%;
 }
+
 .heading h3{
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     padding: 10px 0px;
     font-family: Bradley Hand, cursive;
     font-size: 2em;
     text-shadow: 
-    0 0 7px #f9224b,
-    0 0 10px #fff,
+    0 0 7px red,
+    0 0 10px red,
     0 0 21px white,
     0 0 42px whitesmoke,
-    0 0 82px #f9224b,
-    0 0 92px #f9224b,
-    0 0 102px #f9224a;
+    0 0 82px red,
+    0 0 92px red,
+    0 0 102px red;
     
 }
 h3 {
@@ -28,13 +32,16 @@ h3 {
     animation-name: blink;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    padding: 5%;
+    margin-bottom: 5%;
+    
  }
  @keyframes blink {
     from {
        opacity: 1.5;
     }
     to {
-       opacity: 0.6;
+       opacity: 1.5;
     }
   }
 .space {
@@ -80,7 +87,7 @@ h3 {
   }
 .space{
     
-    font-size: 2em;
+    font-size: 3em;
     padding: 5%;
     margin-top: 5%;
     align-items: center;
@@ -96,6 +103,9 @@ h3 {
     font-size: 1.2rem;
     font-weight: 300;
     color: white;
+}
+.back{
+    background-color: black;
 }
 .event-card__image{
     padding: 0px 10px;

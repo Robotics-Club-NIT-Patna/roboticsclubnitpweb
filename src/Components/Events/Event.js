@@ -5,7 +5,7 @@ import Reward from './Reward'
 function Event(props) {
     const { sampleEvent } = props
     return (
-        <div>
+        <div class = "back">
             <div class = "space">EVENTS</div>
             <div className="heading">
                 <h3>{sampleEvent.heading}</h3>
