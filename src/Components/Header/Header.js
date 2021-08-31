@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from '../../logos/logo1.png'
 import './Header.css'
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -10,25 +10,28 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () => {
+
+    const[sidebar, setSidebar] = useState(false);
+    const showSideBar = () => setSidebar(!sidebar)
+
     return (
         <div className="header">
             <div className="headercontainer">
                 <img src={logo} className="medium" alt="logo"/>
-                <input type="checkbox" className="toggler"/>
-                <div className="hamburger">
-                    <div className="normal"></div>
-                    <div className="fade"></div>
+                <div className="hamburger" onClick={showSideBar}>
+                    <div className={sidebar ? "normal active_normal" : "normal"}></div>
+                    <div className={sidebar ? "active_fade" : "fade"}></div>
                 </div>
-                <div className="menu_left">
+                <div className={sidebar ? "menu_left menu_left_active" : "menu_left"}>
                     
-                        <Link to='/'><span>01 </span>Home</Link>
-                        <Link to='/about'><span>02 </span>About Us</Link>
-                        <Link to='/events'><span>03 </span>Contact</Link>
-                        <Link to='/team'><span>04 </span>Team</Link>
-                        <Link><span>05 </span>News</Link>
+                        <Link to='/' onClick={showSideBar}><span>01 </span>Home</Link>
+                        <Link to='/events' onClick={showSideBar}><span>02 </span>Events</Link>
+                        <Link to='/projects' onClick={showSideBar}><span>03 </span>Projects</Link>
+                        <Link to='/team' onClick={showSideBar}><span>04 </span>Team</Link>
+                        <Link to='/news' onClick={showSideBar} ><span>05 </span>News</Link>
                    
                 </div>
-                <div className="menu_right">
+                <div className={sidebar ? "menu_right menu_right_active" : "menu_right"}>
                     <div className="clubInfo">
                         <img src={logo} className="big" alt="logo"/>
                         <h1 className="name">Robotics Club NIT Patna</h1>
