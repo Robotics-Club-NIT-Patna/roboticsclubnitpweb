@@ -1,0 +1,31 @@
+/* Hello Denver Font by Good Apples (http://goodappl.es) is licensed under a 
+   Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
+*/
+
+
+@font-face {
+    font-family: 'HELLODENVERDISPLAYBOLDBoldRg';
+    src: url('hellodenverdisplaybold_v1.6.eot');
+    src: url('hellodenverdisplaybold_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('hellodenverdisplaybold_v1.6.woff') format('woff'),
+         url('hellodenverdisplaybold_v1.6.ttf') format('truetype'),
+         url('hellodenverdisplaybold_v1.6.svg#HELLODENVERDISPLAYBOLDBoldRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'HELLODENVERDISPLAYREGULARRg';
+    src: url('hellodenverdisplayregular_v1.6.eot');
+    src: url('hellodenverdisplayregular_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('hellodenverdisplayregular_v1.6.woff') format('woff'),
+         url('hellodenverdisplayregular_v1.6.ttf') format('truetype'),
+         url('hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
