@@ -1,40 +1,76 @@
 .news{
     font-family: sans-serif;
     text-align: center;
+    background-color: black;
   }
   
-  h4 {
-    text-align: left;
-    margin-left: 40px;
+  h3 {
+    margin:10px auto;
   }
   
   hr {
     border-top: 2px dotted #3f51b5;
   }
   
+  
   button {
-    margin-right: 10px;
-    background: #3f51b5;
-    color: white;
+    border-radius: 4px;
+    background-color: #dc3545;
     border: none;
-    padding: 5px 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
     width: 100px;
+    transition: all 0.5s;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 1px #ccc;
+    margin: 5px;
   }
   
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
   /* For pdf */
   .react-pdf__Page {
     margin-top: 10px;
+    width: auto;
+  }
+  .react-pdf__Page__canvas{
+    border-radius: 50px;
   }
   .react-pdf__Page__textContent {
-    border: 1px solid darkgrey;
-    box-shadow: 5px 5px 5px 1px #ccc;
-    border-radius: 5px;
   }
-  
-  .react-pdf__Page__annotations.annotationLayer {
-    padding: 20px;
+  .news__allpagePdf-document{
+    background: linear-gradient(145deg, #6e6e6e, #838383);
+    border-radius: 50px;
+    box-shadow:  2px 2px 6px #686868,
+    -2px -2px 6px #8c8c8c;
+
+  }
+  .react-pdf__Page__annotations .annotationLayer {
+    /* padding: 20px; */
+    border-radius: 20px;
   }
   
   .react-pdf__Page__canvas {
@@ -42,8 +78,14 @@
   }
   
   /* For all pages */
-  .all-page-container {
+  .news__allPageContainer-parent{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .news__allPageContainer-children{
     height: 100%;
-    max-height: 500px;
+    max-height: 100vh;
+    margin-top: 20px;
     overflow: auto;
   }

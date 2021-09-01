@@ -13,14 +13,21 @@ const News = () => {
   return (
 
     <div className="news">
-      <h4>Single Page</h4>
-      <SinglePagePDFViewer pdf={samplePDF} />
+      <h3>Single Page</h3>
+      <div className="news__singlePageContainer">
+        <SinglePagePDFViewer pdf={samplePDF} />
+      </div>
 
       <hr />
 
-      <h4>All Pages</h4>
-      <div className="all-page-container">
-        <AllPagesPDFViewer pdf={samplePDF} />
+      <h3>All Pages</h3>
+      <div className="news__allPageContainer-parent">
+        <div className="news__allPageContainer-children">
+          <AllPagesPDFViewer pdf={samplePDF} />
+        </div>
+        <div className="news__allPageContainer-children">
+          <AllPagesPDFViewer pdf={samplePDF} />
+        </div>
       </div>
 
       <hr />
