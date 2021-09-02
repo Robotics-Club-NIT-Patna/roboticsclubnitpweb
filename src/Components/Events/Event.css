@@ -12,6 +12,9 @@
     color: #93cddd;
     padding: 10px 0px;
 }
+.events-grandParent{
+    background-color: black;
+}
 .event-card{
     display: grid;
     grid-template-columns: repeat(2, 1fr );
