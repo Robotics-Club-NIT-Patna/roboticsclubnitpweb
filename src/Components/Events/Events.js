@@ -7,7 +7,8 @@ function Events() {
     return (
         <div className="events-grandParent">
             <img className="waveUp" src={waveUp}/>
-            <h1>Events</h1>
+            <div class = "space">EVENTS</div>
+           
             <EventList sampleEvents={sampleEvents}/>
             <img className="waveUp" src={waveDown}/>
         </div>

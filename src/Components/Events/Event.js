@@ -5,6 +5,7 @@ function Event(props) {
     const { id, image, description, heading, rewards } = props
     return (
         <div>
+            
             <div className="heading">
                 <h3>{heading}</h3>
                 <div className="event-card">
