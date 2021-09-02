@@ -2,6 +2,8 @@
     font-family: sans-serif;
     text-align: center;
     background-color: black;
+    display: flex;
+    flex-direction: column;
   }
   
   h3 {
@@ -57,9 +59,8 @@
     width: auto;
   }
   .react-pdf__Page__canvas{
+    margin: 0 auto;
     border-radius: 50px;
-  }
-  .react-pdf__Page__textContent {
   }
   .news__allpagePdf-document{
     background: linear-gradient(145deg, #6e6e6e, #838383);
@@ -69,12 +70,7 @@
 
   }
   .react-pdf__Page__annotations .annotationLayer {
-    /* padding: 20px; */
     border-radius: 20px;
-  }
-  
-  .react-pdf__Page__canvas {
-    margin: 0 auto;
   }
   
   /* For all pages */
@@ -88,4 +84,10 @@
     max-height: 100vh;
     margin-top: 20px;
     overflow: auto;
+  }
+  @media (max-width: 768px) {
+   /* the only thing left is to make changes to height and width of canvas as follows
+   height: 500px;
+   width: 353px;
+   */
   }
