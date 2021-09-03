@@ -94,6 +94,19 @@ const News = () => {
 
         </div>
       </div>
+      <hr/>
+      <h3>Single Page</h3>
+      <div className="news__singlePageContainer">
+        <SinglePagePDFViewer pdf={samplePDF}/>
+      </div>
+
+      <hr/>
+      <h3>All Page</h3>
+      <div className="news__allPageContainer-parent">
+      <div className="news__allPageContainer-children">
+          <AllPagesPDFViewer pdf={samplePDF}/>
+        </div>
+      </div>
 
       <img className="waveDown" src={waveDown}/>
     </div>
