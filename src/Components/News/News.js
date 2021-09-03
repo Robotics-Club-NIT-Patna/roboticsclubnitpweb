@@ -14,26 +14,86 @@ import "./styles.css";
 const News = () => {
   return (
 
-    <div className="news">
+    <div className="news-bg">
       <img className="waveUp" src={waveUp}/>
-      <h3>Single Page</h3>
-      <div className="news__singlePageContainer">
-        <SinglePagePDFViewer pdf={samplePDF} />
-      </div>
+      <h2>News</h2>
 
-      <hr />
+      <div className="slider">
+        <div className="slide-track">
 
-      <h3>All Pages</h3>
-      <div className="news__allPageContainer-parent">
-        <div className="news__allPageContainer-children">
-          <AllPagesPDFViewer pdf={samplePDF} />
+        
+
+           <div className="slide">
+             <p className="news news1">The href attribute requires a valid value to be accessible. Provide a valid,</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">img elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, provident.</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore, mollitia hic odit praesentium possimus.</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">The href attribute requires a valid value to be accessible</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">e to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1"> Line 16:21:  The href attribute requires a valid value to be accessible. Provide a valid,</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">use a button and change it with appropriate styles. Learn more </p>
+           </div>
+
+
+           
+
+           <div className="slide">
+             <p className="news news1">The href attribute requires a valid value to be accessible. Provide a valid,</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">img elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, provident.</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore, mollitia hic odit praesentium possimus.</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">The href attribute requires a valid value to be accessible</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">e to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1"> Line 16:21:  The href attribute requires a valid value to be accessible. Provide a valid,</p>
+           </div>
+
+           <div className="slide">
+             <p className="news news1">use a button and change it with appropriate styles. Learn more </p>
+           </div>
+
+           
+
         </div>
-        <div className="news__allPageContainer-children">
-          <AllPagesPDFViewer pdf={samplePDF} />
-        </div>
       </div>
-
-      <hr />
 
       <img className="waveDown" src={waveDown}/>
     </div>
