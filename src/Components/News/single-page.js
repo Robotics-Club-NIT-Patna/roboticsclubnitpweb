@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
-
 export default function SinglePage(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
@@ -38,14 +37,14 @@ export default function SinglePage(props) {
           Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
         </p>
         <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-          Previous
+          <span>Previous</span>
         </button>
         <button
           type="button"
           disabled={pageNumber >= numPages}
           onClick={nextPage}
         >
-          Next
+          <span>Next</span>
         </button>
       </div>
     </>
