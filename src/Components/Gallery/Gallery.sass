@@ -1,0 +1,145 @@
+$box-size : 16vw
+
+.App
+    overflow-y: auto
+
+
+.gallery-main
+    padding: 1%
+    overflow: hidden
+    .gallery-body
+        position: relative
+        overflow: auto
+        margin-top: 2%
+        display: grid
+        @for $var from 1 through 17
+            #img#{$var}
+                grid-area: b#{$var}
+        .image-box
+            margin: 1%
+            .image-details
+                display: none
+            &:hover 
+                box-shadow: 0px 0px 2px 2px #fff
+                .image-details
+                    display: block
+                    color: #ff9090
+                    height: 100%
+                    border-radius: 5px
+                    cursor: pointer
+                    position: relative
+                    top: -100%
+                    background-image: linear-gradient(to bottom, #000, #1115, #2225,#22222221) 
+        img
+            align-content: center
+            justify-self: center
+            border-radius: 5px
+            
+    .gallery-screen
+        position: fixed
+        height: 100vh
+        z-index: 1000
+        margin-top: -30px
+        background-color: #0e0e11f8
+        display: flex
+        .right
+            width: 27.5vw
+            background-color: #0c080898
+            padding: 5% 10px
+            overflow-y: auto
+        .left
+            width: 67.5vw
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                object-fit: cover
+
+        .screen-close
+            position: relative
+            right: -95vw
+            z-index: 1001
+            width: 35px
+            height: 35px
+            cursor: pointer
+            background-color: #ff3333
+            span            
+                position: relative
+                font-size: 30px
+                top: -5px
+                
+@media screen and ( max-width: 480px )
+    $box-size-m : 32vw
+    .gallery-main
+        .gallery-body
+            height: $box-size-m*8 + 1vw
+            grid-template-areas: "b15 b1 b2" "b15 b3 b4" "b5 b17 b17" "b6 b17 b17" "b7 b8 b16" "b13 b13 b16" "b9 b10 b11" "b12 b14 b14"
+            .i1
+                width: $box-size-m
+                height: $box-size-m
+            .i2x
+                width: $box-size-m*2
+                height: $box-size-m
+            .i2y
+                width: $box-size-m
+                height: $box-size-m*2
+            .i4
+                width: $box-size-m*2
+                height: $box-size-m*2
+        .gallery-screen
+            flex-direction: column
+            .right
+                width: 100%
+                height: 40vh 
+            .left
+                width: 100%
+                height: 70vh
+            .screen-close
+                right: -90vw
+
+@media screen and (min-width: 480px) and (max-width: 990px)
+    $box-size-t: 24vw
+    .gallery-main
+        .gallery-body
+            height: $box-size-t*6 + 1vw
+            grid-template-areas: "b13 b13 b1 b2" "b3 b4 b17 b17" "b5 b6 b17 b17" "b14 b14 b7 b8" "b9 b15 b10 b16" "b11 b15 b12 b16"        
+            .i1
+                width: $box-size-t
+                height: $box-size-t
+            .i2x
+                width: $box-size-t*2
+                height: $box-size-t
+            .i2y
+                width: $box-size-t
+                height: $box-size-t*2
+            .i4
+                width: $box-size-t*2
+                height: $box-size-t*2
+        .gallery-screen
+            flex-direction: column
+            .right
+                width: 100%
+                height: 20% 
+            .left
+                width: 100%
+                height: 80%
+            .screen-close
+                right: -90vw
+
+@media screen and ( min-width: 990px )
+    .gallery-main
+        .gallery-body
+            height: $box-size*4 + 1vw
+            grid-template-areas: "b15 b1 b2 b3 b4 b5" "b15 b6 b13 b13 b17 b17" "b7 b8 b9 b16 b17 b17" "b14 b14 b10 b16 b11 b12"        
+            .i1
+                width: $box-size
+                height: $box-size
+            .i2x
+                width: $box-size*2
+                height: $box-size
+            .i2y
+                width: $box-size
+                height: $box-size*2
+            .i4
+                width: $box-size*2
+                height: $box-size*2
