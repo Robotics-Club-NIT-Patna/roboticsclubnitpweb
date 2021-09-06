@@ -34,13 +34,14 @@ const Gallery =() => {
             id: 4,
             imgSrc: img4,
         },
+
+        {
+            id:6 ,
+            imgSrc: img6,
+        },
         {
             id: 5,
             imgSrc: img5,
-        },
-        {
-            id: 6,
-            imgSrc: img6,
         },
         {
             id: 7,
@@ -82,12 +83,12 @@ const Gallery =() => {
         <div className = "parent">
             
             <img className="waveUp" src={waveUp}/>
-            {/* <div id="title">Our Gallery</div> */}
             <div className = {"title"}>
                 Our Gallery
             </div>
             <div className={model? "model open" : "model"}>
                 <img src={tempimgSrc}/>
+                
                 <CloseIcon onClick={() => setModel(false)}/>
             </div>
             <div className = "gallery">
