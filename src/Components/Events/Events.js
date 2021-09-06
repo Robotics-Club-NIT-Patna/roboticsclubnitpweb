@@ -13,6 +13,11 @@ function Events() {
               </div>
                 <div className="Event-heading_slider"></div>  
             </div>  
+            <div className="participation-quote">
+              <blockquote className="callout quote EN">
+              No experience in this world has ever been cathartic without the willing participation of the individual. Life does not automatically bestow wisdom or growth on anyone just for showing up.<cite>  – Elizabeth Gilbert</cite>
+              </blockquote>
+            </div>
 
               <EventList sampleEvents={sampleEvents}/>
           </div>
