@@ -1,16 +1,51 @@
+@-webkit-keyframes Stretchyword {
+  0% {
+    letter-spacing: 1px;
+  }
+  50% {
+    letter-spacing: 15px;
+  }
+  100% {
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes Stretchyword {
+  0% {
+    letter-spacing: 1px;
+  }
+  50% {
+    letter-spacing: 15px;
+  }
+  100% {
+    letter-spacing: 1px;
+  }
+}
+
 .App {
   overflow-y: auto;
 }
 
 .gallery-main {
   padding: 1%;
-  overflow: hidden;
+}
+
+.gallery-main .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  -webkit-animation-name: Stretchyword;
+          animation-name: Stretchyword;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .gallery-main .gallery-body {
   position: relative;
   overflow: auto;
-  margin-top: 2%;
   display: -ms-grid;
   display: grid;
 }
@@ -92,8 +127,8 @@
 }
 
 .gallery-main .gallery-body .image-box:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px #fff;
-          box-shadow: 0px 0px 2px 2px #fff;
+  -webkit-box-shadow: 0px 0px 2px 2px #ff5050;
+          box-shadow: 0px 0px 2px 2px #ff5050;
 }
 
 .gallery-main .gallery-body .image-box:hover .image-details {
@@ -118,9 +153,11 @@
 
 .gallery-main .gallery-screen {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100vh;
-  z-index: 1000;
-  margin-top: -30px;
+  z-index: 100;
   background-color: #0e0e11f8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,14 +165,14 @@
 }
 
 .gallery-main .gallery-screen .right {
-  width: 27.5vw;
+  width: 30vw;
   background-color: #0c080898;
   padding: 5% 10px;
   overflow-y: auto;
 }
 
 .gallery-main .gallery-screen .left {
-  width: 67.5vw;
+  width: 68vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,17 +190,15 @@
 }
 
 .gallery-main .gallery-screen .screen-close {
-  position: relative;
-  right: -95vw;
-  z-index: 1001;
-  width: 35px;
-  height: 35px;
+  z-index: 101;
   cursor: pointer;
-  background-color: #ff3333;
+  background-color: #0c080898;
 }
 
 .gallery-main .gallery-screen .screen-close span {
+  background-color: #ff5050;
   position: relative;
+  padding: 0 7px;
   font-size: 30px;
   top: -5px;
 }
@@ -197,14 +232,11 @@
   }
   .gallery-main .gallery-screen .right {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
   .gallery-main .gallery-screen .left {
     width: 100%;
-    height: 70vh;
-  }
-  .gallery-main .gallery-screen .screen-close {
-    right: -90vw;
+    height: 68vh;
   }
 }
 
@@ -241,10 +273,7 @@
   }
   .gallery-main .gallery-screen .left {
     width: 100%;
-    height: 80%;
-  }
-  .gallery-main .gallery-screen .screen-close {
-    right: -90vw;
+    height: 78%;
   }
 }
 

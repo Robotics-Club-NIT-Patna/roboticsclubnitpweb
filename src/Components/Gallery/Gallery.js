@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Gallery.css'
-
+import waveUp from '../../SVGs/wave-8.svg'
+import waveDown from '../../SVGs/wave-5.svg'
 
 
 class Gallery extends Component {
@@ -46,20 +47,24 @@ class Gallery extends Component {
             "https://source.unsplash.com/random/400x200",
             "https://source.unsplash.com/random/200x400",
             "https://source.unsplash.com/random/200x400",
-            "https://source.unsplash.com/random/400x400"];
+            "https://source.unsplash.com/random/600x600"];
         var image = idata[id];
         return (  
 <div className="gallery-main">
-    Gallery Component
+    <img className="waveUp" src={waveUp}/>
+    <div className ="heading">
+        Our <span style={{color: "#ff5050"}}>G</span>allery
+    </div>
     <div className="gallery-screen" style={{display : this.state.screen}}>
-        <div className="screen-close" onClick={this.handleCloseBtn} >
-            <span>&times;</span>
-        </div>
+
         <div className="left">
             <img src={image} alt="image" ></img>
         </div>
         <div className="right">
             A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin, it can take down some of the issues that may have been causing the writers' block in the first place.
+        </div>       
+        <div className="screen-close">
+            <span onClick={this.handleCloseBtn}>&times;</span>
         </div>
     </div>
     <div className="gallery-body">
@@ -92,14 +97,14 @@ class Gallery extends Component {
                 else if(i==16){
                     return(
                         <div id={id} className="image-box i4" onClick={(e)=>this.handleImage(i)} >
-                            <img  src="https://source.unsplash.com/random/400x400" className="i4"></img>
+                            <img  src="https://source.unsplash.com/random/600x600" className="i4"></img>
                             <div class="image-details"><span>im an image</span></div>
                         </div>)
                 }
             })
         }
     </div>
-
+    <img className="waveDown" src={waveDown}/>
 </div>
         );
     }
