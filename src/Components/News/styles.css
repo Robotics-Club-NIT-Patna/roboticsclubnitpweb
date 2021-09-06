@@ -15,7 +15,7 @@
   }
   
   
-  button {
+  .next-button {
     border-radius: 4px;
     background-color: #dc3545;
     border: none;
@@ -29,14 +29,14 @@
     margin: 5px;
   }
   
-  button span {
+  .next-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  button span:after {
+  .next-button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -45,11 +45,11 @@
     transition: 0.5s;
   }
   
-  button:hover span {
+  .next-button:hover span {
     padding-right: 25px;
   }
   
-  button:hover span:after {
+  .next-button:hover span:after {
     opacity: 1;
     right: 0;
   }

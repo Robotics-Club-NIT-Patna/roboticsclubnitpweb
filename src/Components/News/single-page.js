@@ -36,10 +36,11 @@ export default function SinglePage(props) {
         <p>
           Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
         </p>
-        <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+        <button type="button" disabled={pageNumber <= 1} onClick={previousPage} className="next-button">
           <span>Previous</span>
         </button>
         <button
+          className="next-button"
           type="button"
           disabled={pageNumber >= numPages}
           onClick={nextPage}
