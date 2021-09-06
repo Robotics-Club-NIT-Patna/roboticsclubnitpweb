@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Event-heading{
+    padding: 50px 0px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    overflow: hidden;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-basis: 0;
+    margin-bottom: 30px;
+}
+.App{
+    background: linear-gradient(to right, hsl(200,100%,50%), hsl(175,100%,50%));
+}
+body{background: linear-gradient(to right, hsl(200,100%,50%), hsl(175,100%,50%));}
+.Event-heading-div{
+    overflow: hidden;
+    display: block;
+    animation: slider ease-in-out 3s alternate infinite;
+    height: 54px;
+    width: 363px;
+}
+.Event-heading_slider{
+    height: 32px;
+    margin-left: 5px;
+    width: 2px;
+    border-left: 1px solid rgb(184, 183, 183);
+    background-color: rgb(184, 183, 183);
+}
+@keyframes slider {
+    0%{
+        width: 363px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+@media(max-width:768px){
+    .Event-heading{
+        margin-top: 9vh;
+    }
+}

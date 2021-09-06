@@ -2,10 +2,11 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr );
-    background-color: #28336f;
-    background-repeat: no-repeat;
-    color: white;
+    /* background-color: #28336f; */
+    /* background-repeat: no-repeat; */
+    color: black;
     position: absolute;
+    background: linear-gradient(to right, hsl(200,100%,50%), hsl(175,100%,50%));
 }
 
 .event__card-parent{
@@ -40,8 +41,9 @@
     height:293.641px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
-    background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #f9224b 66%, #28336f 66%);
-    
+    /* background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #f9224b 66%, #28336f 66%); */
+    background-color: rgba(255, 255, 255,.8);
+
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border-radius: 12px;
@@ -86,7 +88,7 @@
     margin-top: -100px;
     visibility: hidden;
     padding: 10px 15px;
-    color: white;
+    color: black;
     opacity: 0;
     transition: 0.3s ease-in-out;
     display: flex;
@@ -110,7 +112,7 @@
 }
 .know-more-event{
     border-radius: 4px;
-    background:rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.9);
     border: none;
     color: black;
     font-weight: 500;
@@ -126,9 +128,9 @@
     align-self: center;
 }
 .know-more-event:hover{
-    background:black;
-    border: 2px solid #f922496e;
-    color: red;
+    background:hsl(200,100%,50%);
+    border: 2px solid hsl(175,100%,50%);
+    color: greenyellow;
 }
 .event__card-parent .card:hover .content{
     visibility: visible;

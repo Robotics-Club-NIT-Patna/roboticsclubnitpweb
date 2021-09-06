@@ -1,16 +1,22 @@
 import React from 'react'
 import EventList from './EventList'
-import waveUp from '../../SVGs/wave-8.svg'
-import waveDown from '../../SVGs/wave-5.svg'
+import './EventHeading.css'
 
 function Events() {
     return (
-        <div className="events-grandParent">
-            <img className="waveUp" src={waveUp}/>
-            <h1>Events</h1>
-            <EventList sampleEvents={sampleEvents}/>
-            <img className="waveUp" src={waveDown}/>
-        </div>
+      <>
+          
+          <div className="events-grandParent">   
+            <div className="Event-heading">
+              <div className="Event-heading-div">
+                <h1>Welcome to Events</h1> 
+              </div>
+                <div className="Event-heading_slider"></div>  
+            </div>  
+
+              <EventList sampleEvents={sampleEvents}/>
+          </div>
+      </>
     )
 }
 
