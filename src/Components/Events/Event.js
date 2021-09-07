@@ -1,13 +1,14 @@
 import React,{useState} from 'react'
 import "./Event.css"
 import RewardList from "./RewardList"
+
 function Event(props) {
-    const { id, image, description, heading, rewards } = props
-    const [imagecss, setImageCss]= useState(true)
-    const showImage = ()=> setImageCss(!imagecss)
+    const { id, image, description, heading, rewards, clicked } = props
     return (
         
-            <div onClick={()=>showImage()} className={imagecss ? "event__card-parent" : "event__card-parent-overlay"}>
+            <div 
+                className="event__card-parent"
+            >
                 <div className="card">
                     <div className="img8x_normal">
                         <img src={image}  alt="image" />
