@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import svgLogo from '../../SVGs/svg1.svg'
 
+
 const Home = () => {
     return (
         <div className="home">
@@ -10,6 +11,7 @@ const Home = () => {
                 <h1 className="heading1 neonText">ROBOTICS CLUB</h1>
                 <h1 className="heading2 neonText">NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h1>
             </div>
+            
         </div>
     )
 }

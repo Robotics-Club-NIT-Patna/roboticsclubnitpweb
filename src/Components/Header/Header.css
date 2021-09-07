@@ -79,7 +79,7 @@
   width: 50%;
   height: 3px;
   border-radius: 1.5px;
-  background-color: #f9224b;
+  background-color: #f9224b; 
   transition: 0.4s;
   transform: rotate(-135deg);
   opacity: 0;
@@ -90,7 +90,7 @@
   width: 50%;
   height: 3px;
   border-radius: 1.5px;
-  background-color: #f9224b;
+  background-color: #f9224b; 
   transition: 0.4s;
 }
 .hamburger > .normal::before,

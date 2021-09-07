@@ -4,6 +4,7 @@
     align-items: center;
    }
    .heading{
+       
        background-color: black;
        margin: 5px 0px;
        font-size: 1.2em;
@@ -70,13 +71,14 @@
        53%,
        57%,
        100% {
-         text-shadow: 0.1vw 0vw 0vw #e41f43, 0.1vw 0vw 0vw #e41f43,
-           0.1vw 0vw 0vw #e41f43, 0.1vw 0vw 0.1vw #e41f43, 0.1vw 0vw 0.1vw #e41f43,
-           0.1vw 0vw 0.1vw #e41f43, 0.1vw 0vw 2vw #e41f43, 0.1vw 0vw 2vw #e41f43,
-           0.1vw 0vw 1vw #e41f43, 0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 1vw #f9224b,
-           0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 3vw #f9224b, 0.1vw 0vw 3vw #f9224b,
-           0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 5vw #f9224b, 0.1vw 0vw 30vw #f9224b,
-           0.1vw 0vw 1vw #f9224b;
+          text-shadow: 0.1vw 0vw 0vw  #e41f43,  
+            0.1vw 0vw 0vw #e41f43, 
+            0.1vw 0vw 0vw #e41f43, 0.1vw 0vw 0.1vw #e41f43, 0.1vw 0vw 0.1vw #e41f43, 
+            0.1vw 0vw 0.1vw #e41f43, 0.1vw 0vw 2vw #e41f43, 0.1vw 0vw 2vw #e41f43, 
+            0.1vw 0vw 1vw #e41f43, 0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 1vw #f9224b, 
+            0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 3vw #f9224b, 0.1vw 0vw 3vw #f9224b, 
+            0.1vw 0vw 1vw #f9224b, 0.1vw 0vw 5vw #f9224b, 0.1vw 0vw 30vw #f9224b, 
+            0.1vw 0vw 1vw #f9224b; 
        }
      
        20%,

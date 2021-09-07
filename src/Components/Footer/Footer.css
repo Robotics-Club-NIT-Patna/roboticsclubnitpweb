@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom right,#000 40% , #f9224b 60%);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 3.75rem;  
+    padding-bottom: 2.5rem;
+    color:#fff;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    margin: 0.63rem auto;
+    overflow: hidden;
+}
+
+.footer-content div{
+    width: 300px;
+}
+.footer p{
+    max-width: 31.25rem;
+    margin: 0.63rem auto;
+    line-height: 1.75rem;
+    font-size: 0.88rem;
+    text-align: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0rem;
+    height: 60px;
+    flex-direction: row ;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+}
+
+.logo {
+    border: 1px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+.socials a i{
+    font-size: 2.5rem;
+    transition: height .4s ease;
+
+}
+.socials a:hover i{
+    height: 4rem;
+}
+.footer-content div.location {
+    font-size: 2.5rem;
+    transition: transform .4s ease;
+}
+
+.footer-content div.location i{
+    font-size: 1.5rem;
+}
+
+.footer-content div.location:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    
+}
+.footer-content .logo > .medium {
+    width: 192px;
+    height: 144px;
+    object-fit: contain;
+  }
