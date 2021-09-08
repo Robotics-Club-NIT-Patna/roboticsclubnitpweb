@@ -8,6 +8,7 @@ import About from './Components/About/About';
 import News from './Components/News/News'
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
+import ProjectPage from './Components/Projects/ProjectPage';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,10 @@ function App() {
 
         <Route  exact path='/news'>
           <News/>
+        </Route>
+
+        <Route  exact path='/projects'>
+          <ProjectPage/>
         </Route>
         
         <Route  exact path='/events'>

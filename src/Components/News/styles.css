@@ -138,6 +138,7 @@ button:hover span:after {
 .news:hover{
   transform: translateZ(12px);
   border:2px solid #dc3545;
+  box-shadow: 1px 1px 30px 2px #e41f43;
 }
 
 .slider::before,

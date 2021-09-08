@@ -1,0 +1,28 @@
+.project{
+  background-color: black;
+  min-height: 100vh;
+  z-index: 12;
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.base{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+#heading {
+  font-family: "Teko", sans-serif;
+  font-size: 62px;
+  position:relative;
+  left: -30rem;
+}
+@media (max-width: 768px) {
+  .waveUp,
+  .waveDown {
+    height: 40vh;
+  }
+}
