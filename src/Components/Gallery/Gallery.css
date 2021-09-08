@@ -1,0 +1,141 @@
+.gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 0 12px;
+    margin-top: 12px;
+    margin: 5%;
+    
+}
+.pics{
+    background-color: #f9224b;
+    padding: 2%;
+}
+.text{
+    flex-wrap: wrap;
+    flex-direction: column;
+    -moz-box-align: end;
+}
+
+.parent{
+    background-color: black;
+}
+.title{
+    padding: 0%;
+    margin: 0%;
+    margin-top: 0%;
+    
+    
+}
+.gallery .pics{
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+   
+}
+
+.gallery .pics :hover{
+    filter: drop-shadow(16px 16px 10px black);
+    transform: scale(1.2) ;
+    transition-delay: 400ms;
+    transition: opacity .5s ease , visibility .5s ease , transform .5s ease-in-out;
+
+    opacity: 1;
+    transition-timing-function: ease;
+    overflow: hidden;
+    /* transition: transform .4s scale(1.05),transform .4s scale(1.1); */
+    
+}
+@media(max-width: 990px){
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+       
+    }
+   
+}
+@media(max-width: 480px){
+    .gallery{
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count:1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+ 
+    }
+   
+}
+.model{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: opacity .4s ease , visibility .4s ease , transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+.model.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.model.img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0%;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+    max-height: 100%;
+}
+.model.open svg{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    background-color: black;
+    color: #f9224b;
+    cursor: pointer;
+}
+.parent .title{
+    font-size: 4em;
+    color: white;
+    padding: 10px 0px;
+    font-family: Bradley Hand, cursive;
+   
+    text-shadow: 
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px white,
+    0 0 42px whitesmoke,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 102px red;
+    animation: flicker1 0.5s infinite alternate;
+    
+}
+/* .title{
+    font-family: "neon";
+    font-size: 3rem;
+    color: white;
+   
+    
+  } */
