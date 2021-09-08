@@ -6,7 +6,7 @@ function EventList({sampleEvents}) {
         return <Event key = {event.id} {...event}/>
     })
     return (
-        <div>
+        <div className="event-list">
             {sampleEventList}
         </div>
     )
