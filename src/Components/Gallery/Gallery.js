@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import img1 from './1.jpeg'
 import img2 from './2.jpeg'
 import img3 from './3.jpeg'
@@ -14,9 +14,12 @@ import CloseIcon from '@material-ui/icons/Close';
 import './Gallery.css'
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
-
+import AOS from "aos";
 
 const Gallery =() => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, [])
     let data = [
         {
             id: 1,
@@ -95,7 +98,7 @@ const Gallery =() => {
                 {data.map((item, index)=>{
                     return(
                         <div className = "pics" key ={index} onClick={()=>getImg(item.imgSrc)}>
-                            <img src = {item.imgSrc} style = {{width: '100%'}}/>
+                            <img src={item.imgSrc} style={{ width: '100%' }} data-aos="zoom-in" data-aos-anchor-placement="center-bottom" />
                         </div>
                     )
                 })}
