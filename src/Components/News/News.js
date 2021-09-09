@@ -15,7 +15,7 @@ const News = () => {
   return (
         
     <div className="news-bg">
-    <img className="waveUp" src={waveUp}/>
+    
     <h2>News</h2>
 
     <div className="slider">
@@ -108,7 +108,7 @@ const News = () => {
       </div>
     </div>
 
-    <img className="waveDown" src={waveDown}/>
+   
   </div>
     
   );

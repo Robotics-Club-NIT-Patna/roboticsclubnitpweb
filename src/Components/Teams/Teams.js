@@ -12,7 +12,7 @@ const Teams = () => {
     }, [])
     return (
         <div className="Teams">
-            <img className="waveUp" src={waveUp} />
+           
             <h1 id="teamName">Our Team</h1>
             <div className="cardContainer">
                 <div data-aos="flip-left"  >
@@ -52,7 +52,7 @@ const Teams = () => {
                     <Card />
                 </div >
             </div>
-            <img className="waveDown" src={waveDown} />
+
         </div>
     )
 }

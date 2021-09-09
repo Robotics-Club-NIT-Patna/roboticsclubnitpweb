@@ -85,7 +85,7 @@ const Gallery =() => {
     return (
         <div className = "parent">
             
-            <img className="waveUp" src={waveUp}/>
+            
             <div className = {"title"}>
                 Our Gallery
             </div>
@@ -103,7 +103,7 @@ const Gallery =() => {
                     )
                 })}
             </div>
-            <img className="waveDown" src={waveDown}/>
+            
 
 
         </div>
