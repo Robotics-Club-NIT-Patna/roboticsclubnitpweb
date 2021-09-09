@@ -3,7 +3,7 @@ import "./Card.css"
 
 function Card() {
     return (
-        <div className ="single">
+        <div className="single">
             <div className ="circle"></div>
             <div className ="inner">
                 <h3 id="memberName">Brooke John</h3>
