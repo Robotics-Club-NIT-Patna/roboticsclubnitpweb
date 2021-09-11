@@ -1,5 +1,5 @@
 h2 {
-  margin:-6rem 4rem;
+  margin: -6rem 4rem;
   text-align: left;
   font-size: 3rem;
   font-weight: 600;
@@ -9,12 +9,11 @@ hr {
   border-top: 2px dotted #3f51b5;
 }
 
-
 button {
   border-radius: 4px;
   background-color: #dc3545;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   padding: 10px;
@@ -32,7 +31,7 @@ button span {
 }
 
 button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -53,137 +52,51 @@ button:hover span:after {
   margin-top: 10px;
   width: auto;
 }
-.react-pdf__Page__canvas{
+.react-pdf__Page__canvas {
   margin: 0 auto;
   border-radius: 50px;
 }
-.news__allpagePdf-document{
+.news__allpagePdf-document {
   background: linear-gradient(145deg, #6e6e6e, #838383);
   border-radius: 50px;
-  box-shadow:  2px 2px 6px #686868,
-  -2px -2px 6px #8c8c8c;
-
+  box-shadow: 2px 2px 6px #686868, -2px -2px 6px #8c8c8c;
 }
 .react-pdf__Page__annotations .annotationLayer {
   border-radius: 20px;
 }
 
 /* For all pages */
-.news__allPageContainer-parent{
+.news__allPageContainer-parent {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.news__allPageContainer-children{
+.news__allPageContainer-children {
   height: 100%;
   max-height: 100vh;
   margin-top: 20px;
   overflow: auto;
 }
-@media (max-width: 768px) {
- /* the only thing left is to make changes to height and width of canvas as follows
- height: 500px;
- width: 353px;
- */
-}
 
-.slider{
-    height: 40rem;
-    margin: auto;
-    margin-top: 8rem;
-    position:relative;
-    width: 80%;
-    display:grid;
-    place-items: center;
-    text-align: left;
-    overflow: hidden;
-}
-.slide-track{ 
-     margin: auto;
-     height: calc(1rem * 8);
-     animation: scroll 33s linear infinite;
-}
-@keyframes scroll{
-  0%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(calc(-14rem * 8));
-  }
-}
-.slide{
-  margin-left: 5rem;
-  margin: auto;
-  height: fit-content;
-  width:90%;
-  align-items: center;
-  padding: 10px;
-  perspective: 100px;
-}
-.news-bg{
+.news-bg {
   font-family: sans-serif;
   text-align: center;
   background-color: black;
   display: flex;
   flex-direction: column;
 }
-.news{
+.news {
   padding: 12px;
   width: 100%;
   background-color: #252525;
   border-radius: 0.8rem;
   transition: transform 0.5s ease-in;
-  cursor:pointer;
-}
-.news:hover{
-  transform: translateZ(12px);
-  border:2px solid #dc3545;
+  cursor: pointer;
 }
 
-.slider::before,
-.slider::after{
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 0% ,rgb(20, 20, 20) 100% );
-  content:'';
-  height: 20%;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-}
-.slider::before{
-   top:-3rem;
-   left:0rem;
-   border-radius:0rem  0rem 2rem 2rem;
-}
- 
-.slider::after{
-  top:36rem;
-  left:0rem;
-  transform: rotate(180deg);
-  border-radius:0rem  0rem 2rem 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .slider::before,
-.slider::after{
-  height: 20%;
-}
-.slider::before{
-   top:-4rem;
-   left:0rem;
-}
- 
-.slider::after{
-  top:36rem;
-  left:0rem;
-  transform: rotate(180deg);
-}
-
- }
-
-
-  @media (max-width: 768px) {
-   /* the only thing left is to make changes to height and width of canvas as follows
+@media (max-width: 768px) {
+  /* the only thing left is to make changes to height and width of canvas as follows
    height: 500px;
    width: 353px;
    */
-  }
+}

@@ -4,11 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   color: black;
   position: absolute;
-  background: linear-gradient(
-    to right,
-    hsl(200, 100%, 50%),
-    hsl(175, 100%, 50%)
-  );
+  background-color: black;
   transition: 0.15s;
 }
 
@@ -19,11 +15,12 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-  color: white;
+  color: black;
 }
 
 .event__card-parent-overlay .card .content {
   display: none;
+  transition: 0.5s ease-in-out;
 }
 .event__card-parent .card {
   position: relative;
@@ -35,13 +32,13 @@
   height: 293.641px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  /* background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #f9224b 66%, #28336f 66%); */
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%),
+    linear-gradient(110deg, #f9224b 66%, #28336f 66%); */
+  background-color: white;
 
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .event__card-parent .card:hover {
   min-height: 600px;
@@ -88,9 +85,6 @@
   z-index: 11;
 }
 
-.event__card-parent .card .img8x_normal > img:hover {
-  mask-image: linear-gradient(to top, #0c1a39a1, rgb(183, 136, 214));
-}
 .flex {
   display: flex;
   justify-content: center;
@@ -125,15 +119,10 @@
 }
 .know-more-event {
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  color: black;
-  font-weight: 500;
-  text-align: center;
+  background-color: #f9224b;
+  color: white;
   font-size: 16px;
   padding: 10px;
-  width: 100px;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
   margin: 5px;
 }
@@ -141,9 +130,7 @@
   align-self: center;
 }
 .know-more-event:hover {
-  background: hsl(200, 100%, 50%);
-  border: 2px solid hsl(175, 100%, 50%);
-  color: greenyellow;
+  background-color: #e72145;
 }
 .event__card-parent .card:hover .content {
   visibility: visible;
