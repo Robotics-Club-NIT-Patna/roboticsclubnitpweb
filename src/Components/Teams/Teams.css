@@ -26,6 +26,6 @@
 @media (max-width: 768px) {
   .waveUp,
   .waveDown {
-    height: 40vh;
+    height: auto;
   }
 }

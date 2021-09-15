@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+.about,
+.fewWords {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.about::before,
+.fewWords::before,
+.about::after {
+  content: "";
+  border-top: 1px solid #2f2e41;
+  width: 80vw;
+  margin: auto;
+}
+
+.aboutSVG > img,
+.fewWordsSVG > img {
+  width: 45vw;
+  padding: 50px;
+}
+
+.aboutContent,
+.fewWordsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55vw;
+  padding: 30px;
+  background: url("../../SVGs//circle.svg");
+  background-size: contain;
+  background-blend-mode: multiply;
+}
+
+.whatWeDo {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.whatWeDoSVG {
+  padding: 50px;
+}
+
+.whatWeDoSVG > img {
+  width: 45vw;
+}
+
+.whatWeDoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55vw;
+  background: url("../../SVGs//polygon.svg");
+  background-size: cover;
+  padding: 50px;
+}
+
+.newsNotification {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../../SVGs/bg-news.svg");
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fewWordsHead,
+#whatWeDoHead,
+#aboutHead {
+  font-family: "Teko", sans-serif;
+  font-size: 4rem;
+}
+
+.fewWordsContent > p,
+.aboutContent > p,
+.whatWeDoContent > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  word-spacing: 6px;
+  font-size: 1.1rem;
+  text-align: center;
+}

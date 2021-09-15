@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+.Event-heading {
+  padding: 50px 0px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  overflow: hidden;
+  width: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-basis: 0;
+  margin-bottom: 30px;
+}
+
+.participation-quote {
+  margin: 60px 0px;
+}
+.Event-heading-div {
+  overflow: hidden;
+  display: block;
+  animation: slider ease-in-out 3s alternate infinite;
+  height: 54px;
+  width: 363px;
+  transition: 0.3s;
+}
+.Event-heading-div > h1 {
+  font-family: "Glory", sans-serif;
+}
+.Event-heading_slider {
+  height: 32px;
+  margin-left: 5px;
+  width: 2px;
+  border-left: 1px solid rgb(184, 183, 183);
+  background-color: rgb(184, 183, 183);
+}
+
+blockquote.quote {
+  position: relative;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Glory", sans-serif;
+  width: 80%;
+  color: #484748;
+  margin: 1rem auto 2rem;
+}
+blockquote.EN {
+  background: linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+blockquote.DE {
+  background: linear-gradient(to right, #039be5 4px, transparent 4px) 0% 0%,
+    linear-gradient(to bottom, #039be5 4px, transparent 4px) 0% 0%,
+    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 100%,
+    linear-gradient(to top, #039be5 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+blockquote.quote:before,
+blockquote.quote:after {
+  font-family: fontAwesome;
+  position: absolute;
+  color: #039be5;
+  font-size: 34px;
+}
+
+blockquote.EN:before {
+  content: "\f10d";
+  top: -12px;
+  margin-right: -20px;
+  right: 100%;
+}
+blockquote.EN:after {
+  content: "\f10e";
+  margin-left: -20px;
+  left: 100%;
+  top: auto;
+  bottom: -20px;
+}
+@keyframes slider {
+  0% {
+    width: 363px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .Event-heading {
+    margin-top: 9vh;
+    width: 250px;
+    height: 20px;
+    margin-top: 90px;
+    align-items: center;
+  }
+  .Event-heading-div {
+    height: 30px;
+  }
+  .Event-heading-div > h1 {
+    font-family: "Glory", sans-serif;
+    font-size: 24px;
+  }
+  blockquote.quote {
+    font-size: 1rem;
+  }
+}
