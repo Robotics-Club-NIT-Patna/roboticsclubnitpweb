@@ -8,6 +8,8 @@ import About from './Components/About/About';
 import News from './Components/News/News'
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
+import Footer from './Components/Footer/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -38,6 +40,10 @@ function App() {
 
         <Route  exact path='/gallery'>
           <Gallery />
+        </Route>
+
+        <Route  exact path='/footer'>
+          <Footer />
         </Route>
 
       </Switch>

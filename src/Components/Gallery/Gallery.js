@@ -10,6 +10,7 @@ import img8 from './8.jpeg'
 import img9 from './9.jpeg'
 import img10 from './10.jpeg'
 import Bg from './Background_Img.png'
+import Footer from '../Footer/Footer';
 import CloseIcon from '@material-ui/icons/Close';
 
 import './Gallery.css'
@@ -118,9 +119,10 @@ const Gallery =() => {
                         </div> 
                     )
                 })}
+                <Footer/>
+            
             </div>
-            <img className="waveDown" src={waveDown}/>
-
+            
         </div>
     )
 }
