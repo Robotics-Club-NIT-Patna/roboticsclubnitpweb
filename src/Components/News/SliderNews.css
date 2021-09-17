@@ -10,15 +10,15 @@
 }
 .slide-track {
   margin: auto;
-  height: calc(1rem * 8);
-  animation: scroll 33s linear infinite;
+  height: auto;
+  animation: scroll 15s infinite linear;
 }
 @keyframes scroll {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-14rem * 8));
+    transform: translateY(-50%);
   }
 }
 .slide {
