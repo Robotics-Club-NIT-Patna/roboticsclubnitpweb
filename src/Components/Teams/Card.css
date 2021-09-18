@@ -95,6 +95,7 @@
   color: #f9224b;
   transition: all 500ms ease;
   font-size: 16px;
+  font-family: "FontAwesome";
 }
 
 .social > #socialLinks:hover {
