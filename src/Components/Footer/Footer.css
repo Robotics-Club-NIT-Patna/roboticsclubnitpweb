@@ -1,0 +1,102 @@
+
+body{
+    background: #000;
+}
+
+.footer{
+    position: relative;
+    box-shadow: 8px -4px 8px rgba(238, 240, 241, 0.25);
+    left: 0;
+    right: 0;
+    top: 1vh;
+    background: black;
+    height: 100px;
+    max-width: 100%;
+    font-family: "Open Sans";
+    padding-top: 0.75rem;
+    color:#fff;
+}
+
+.footer-content{
+    background-color:  #f9224b ;
+    clip-path: polygon(0% 5%,15% 0%,100% 10%,100% 100%,0% 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    margin: 0.63rem auto;
+    overflow: hidden;
+    padding-top: 3.75rem;  
+    padding-bottom: 2.5rem;
+}
+
+.footer-content div{
+    max-width: 300px;
+}
+.footer p{
+    max-width: 31.25rem;
+    margin: 0.63rem auto;
+    line-height: 1.75rem;
+    font-size: 0.98rem;
+    text-align: center;
+}
+
+
+.logo {
+    border: 10px;
+    padding: 5px;
+    max-width: 150px;
+}
+
+
+
+.footer-content div.location {
+    font-size: 2.5rem;
+    transition: transform .4s ease;
+}
+
+.footer-content div.location i{
+    font-size: 1.5rem;
+}
+
+.footer-content div.location:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+
+}
+.footer-content .logo > .medium {
+    max-width: 192px;
+    height: 144px;
+    object-fit: contain;
+  } 
+
+.connectAt {
+    padding: 20px;
+  }
+  
+ .connectAt .icons {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  
+.connectAt .icons:hover {
+    transform: translateY(-6px);
+  }
+
+  @media (max-width: 750px){
+    .footer{
+        width: 100%;
+    }
+      .footer-content{
+        
+         padding: 0%;
+      }
+  }
+  
+  
+  
+  

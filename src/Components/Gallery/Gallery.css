@@ -99,3 +99,9 @@
   margin-left: 8vw;
   text-align: left;
 }
+@media (max-width: 740px){
+  .gallery-footer{
+    position: relative;
+    top: 7vh;
+  }
+}

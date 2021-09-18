@@ -2,6 +2,7 @@ import React from "react";
 
 import SinglePagePDFViewer from "./single-page";
 import AllPagesPDFViewer from "./all-pages";
+import Footer from '../Footer/Footer';
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
 
@@ -13,8 +14,9 @@ import "./styles.css";
 import SliderNews from "./SliderNews";
 
 const News = () => {
+ 
   return (
-        
+    <>    
     <div className="news-bg">
     
     <h2>News</h2>
@@ -36,7 +38,8 @@ const News = () => {
 
    
   </div>
-    
+  <div className="news-footer"> <Footer/></div>  
+  </>
   );
 }
 

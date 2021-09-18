@@ -6,7 +6,7 @@ import fewWords from '../../SVGs/fewWords.svg'
 import SliderNews from '../News/SliderNews'
 import AOS from "aos"
 import 'aos/dist/aos.css';
-
+import Footer from '../Footer/Footer';
 
 const About = () => {
     useEffect(() => {
@@ -45,7 +45,7 @@ const About = () => {
             <div className="newsNotification">
             <SliderNews/>
             </div>
-            
+            <div className="about-footer"> <Footer/></div>
         </>
     )
 }

@@ -70,7 +70,9 @@
   }
 }
 
-@media (max-width: 1024px) {
+
+
+/* @media (max-width: 1024px) {
   .home .heading1 {
     font-size: 54px;
   }
@@ -78,6 +80,9 @@
     font-size: 48px;
   }
 }
+
+} */
+
 
 @media (max-width: 768px) {
   .home .heading1 {
@@ -104,6 +109,7 @@
   .home .heading2 {
     font-size: 24px;
   }
+  
 }
 
 /* @media (min-height: 812px) {
@@ -131,3 +137,4 @@
     font-size: 22px;
   }
 }
+

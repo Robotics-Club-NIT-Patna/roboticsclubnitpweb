@@ -10,7 +10,7 @@ import img8 from './8.jpeg'
 import img9 from './9.jpeg'
 import img10 from './10.jpeg'
 import CloseIcon from '@material-ui/icons/Close';
-
+import Footer from '../Footer/Footer';
 import './Gallery.css'
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
@@ -83,6 +83,7 @@ const Gallery =() => {
         setModel(true);
     }
     return (
+        <>
         <div className = "parent">
             
             
@@ -107,6 +108,8 @@ const Gallery =() => {
 
 
         </div>
+        <div className="gallery-footer"> <Footer/></div>
+        </>
     )
 }
 

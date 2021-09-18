@@ -29,3 +29,14 @@
     height: 40vh;
   }
 }
+@media (max-width: 390px){
+  .teams-footer{
+    width: 120vw;
+  }
+}
+@media (max-width: 320px){
+  .teams-footer{
+     width: 130vw;
+  }
+}
+
