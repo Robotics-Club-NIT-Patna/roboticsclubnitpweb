@@ -93,7 +93,11 @@ button:hover span:after {
   transition: transform 0.5s ease-in;
   cursor: pointer;
 }
+.news-footer{
+  position: relative;
+  top: 8vh;
 
+}
 @media (max-width: 768px) {
   /* the only thing left is to make changes to height and width of canvas as follows
    height: 500px;

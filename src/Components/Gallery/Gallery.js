@@ -15,6 +15,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import './Gallery.css'
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
+import Footer from '../Footer/Footer';
 import AOS from "aos";
 import { getQueriesForElement } from '@testing-library/react'
 
@@ -97,6 +98,7 @@ const Gallery =() => {
         setModel(true);
     }
     return (
+        <>
         <div className = "parent" >
             
             <img className="waveUp" src={waveUp}/>
@@ -119,9 +121,11 @@ const Gallery =() => {
                     )
                 })}
             </div>
-            <img className="waveDown" src={waveDown}/>
+            {/* <img className="waveDown" src={waveDown}/> */}
 
         </div>
+        <div className="gallery-footer"> <Footer/></div>
+        </>
     )
 }
 

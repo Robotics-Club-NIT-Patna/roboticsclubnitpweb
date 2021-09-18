@@ -89,3 +89,18 @@
   font-size: 1.1rem;
   text-align: center;
 }
+/* @media (max-width: 570px){
+  .about-footer{
+     width: 110%;
+  }
+}
+@media (max-width: 300px){
+  .about-footer{
+     width: 115%;
+  }
+}
+@media (max-width: 270px){
+  .about-footer{
+     width: 125%;
+  }
+} */
