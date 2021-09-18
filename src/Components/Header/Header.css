@@ -6,7 +6,7 @@
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
@@ -16,7 +16,7 @@
 }
 
 .headercontainer {
-  display: flex;
+  display: grid;
   flex-direction: row;
   width: 90vw;
   justify-content: space-between;
