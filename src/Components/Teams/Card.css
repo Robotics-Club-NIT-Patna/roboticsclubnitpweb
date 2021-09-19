@@ -82,7 +82,7 @@
   border: 2px solid #f9224b;
 }
 
-#socialLinks:hover #socialLinks > i {
+#socialLinks:hover #socialLinks .socialIcons {
   color: #f9224b;
 }
 
@@ -91,17 +91,16 @@
   color: white;
 }
 
-.social > #socialLinks i {
+.social > #socialLinks .socialIcons {
   color: #f9224b;
   transition: all 500ms ease;
-  font-size: 16px;
 }
 
 .social > #socialLinks:hover {
   opacity: 1;
 }
 
-.social > #socialLinks:hover i {
+.social > #socialLinks:hover .socialIcons {
   color: #f9224b;
 }
 
