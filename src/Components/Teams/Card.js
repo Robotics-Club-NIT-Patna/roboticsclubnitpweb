@@ -1,23 +1,20 @@
 import React from 'react'
 import "./Card.css"
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-function Card() {
+function Card(props) {
     return (
         <div className="single">
             <div className ="circle"></div>
             <div className ="inner">
-                <h3 id="memberName">Brooke John</h3>
-                <p id="memberDesignation">Web Designer</p>
+                <h3 id="memberName">{props.name}</h3>
+                <p id="memberDesignation">{props.designation}</p>
                 <div className ="image">
-                    <img src="/team1.png" alt="" />
+                    <img src={props.img} alt="" />
                 </div>
                 <div className ="social">
-                    <a id="socialLinks" href="#"><FacebookOutlinedIcon className="socialIcons"/></a>
-                    <a id="socialLinks" href="#"><TwitterIcon className="socialIcons"/></a>
-                    <a id="socialLinks" href="#"><InstagramIcon className="socialIcons"/></a>
+                    <a id="socialLinks" href={props.link}><LinkedInIcon className="socialIcons"/></a>
+
                 </div>
             </div>
         </div>

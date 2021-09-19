@@ -111,6 +111,15 @@
   left: 0em;
   right: 0%;
 }
+.model .clickImg{
+  display:block;
+  order:2;
+  width:50%;
+  align-items: center;
+  /* margin-left: 25%;
+  margin-top: 0%; */
+  margin: auto;
+  }
 .open svg {
   position: fixed;
   top: 2.6rem;
@@ -149,13 +158,13 @@ flex-flow:row wrap;
 .model .clickImg{
 display:block;
 order:1;
-width: auto;
-height: auto;
+/* width: auto;
+height: auto; */
 }
 .model .clickImg{
 display:block;
 order:2;
-width:auto;
+width:50%;
 align-items: center;
 /* margin-left: 25%;
 margin-top: 0%; */
