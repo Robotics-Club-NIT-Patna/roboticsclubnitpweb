@@ -8,6 +8,7 @@ import About from './Components/About/About';
 import News from './Components/News/News'
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
+
 function App() {
   return (
     <div className="App">

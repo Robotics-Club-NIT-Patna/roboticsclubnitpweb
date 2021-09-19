@@ -5,6 +5,7 @@ import whatWeDo from '../../SVGs/whatWeDo.svg'
 import fewWords from '../../SVGs/fewWords.svg'
 import SliderNews from '../News/SliderNews'
 import AOS from "aos"
+import Example from './Carousel/Slideshow'
 import 'aos/dist/aos.css';
 
 
@@ -45,7 +46,7 @@ const About = () => {
             <div className="newsNotification">
             <SliderNews/>
             </div>
-            
+         <Example />
         </>
     )
 }
