@@ -37,6 +37,8 @@
   overflow: hidden;
   border: 5px solid white;
   transition: all 500ms ease;
+  object-fit: cover;
+  
 }
 
 .single:hover .image {
