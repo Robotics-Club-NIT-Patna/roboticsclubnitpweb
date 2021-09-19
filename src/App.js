@@ -24,11 +24,6 @@ function App() {
           <Teams/>
         </Route>
 
-        <Route  exact path='/about'>
-          <About/>
-        </Route>
-
-
         <Route  exact path='/news'>
           <News/>
         </Route>

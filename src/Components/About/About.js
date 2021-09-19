@@ -4,6 +4,7 @@ import SVG from '../../SVGs/aboutUs.svg'
 import whatWeDo from '../../SVGs/whatWeDo.svg'
 import fewWords from '../../SVGs/fewWords.svg'
 import SliderNews from '../News/SliderNews'
+import Notification from '../../SVGs/notification.svg'
 import AOS from "aos"
 import Example from './Carousel/Slideshow'
 import 'aos/dist/aos.css';
@@ -28,10 +29,10 @@ const About = () => {
             </div>
 
             <div className="whatWeDo">
-                <div data-aos="fade-up-left" className="whatWEDoSVG"><img className="imgSection" src={whatWeDo}/></div>
+                <div data-aos="zoom-in" className="whatWeDoSVG"><img className="imgSection" src={whatWeDo}/></div>
                 <div className="whatWeDoContent">
                     <h1 data-aos="zoom-in" id="whatWeDoHead">What We Do</h1>
-                    <p data-aos="zoom-in">Does robots fascinates you and have you ever fantasized to build one for yourself? The Robotics club NIT Patna is the place! The Robotics club at NIT Patna strives to stimulate interest in robotics among the students of the institute.Today robotics is a rapidly growing field,as technological advances continue;researching,designing, and building new robots serve various practical purposes.Robotics is a field which is not limited to a particular branch and is way more diverse than our own imagination and so is our student club.We are a diverse group of robotics nerds who find roots across all academic departments of the Institute. We at Robotics club believe in working and growing together.You can know more about us from here. #Hail Robotics.</p>
+                    <p data-aos="zoom-in">Does robots fascinates you and have you ever fantasized to build one for yourself? The Robotics club NIT Patna is the place! The Robotics club at NIT Patna strives to stimulate interest in robotics among the students of the institute.Today robotics is a rapidly growing field,as technological advances continue researching designing and building new robots serve various practical purposes.Robotics is a field which is not limited to a particular branch and is way more diverse than our own imagination and so is our student club.We are a diverse group of robotics nerds who find roots across all academic departments of the Institute. We at Robotics club believe in working and growing together.You can know more about us from here. #Hail Robotics.</p>
                 </div>
             </div>
 
@@ -43,10 +44,18 @@ const About = () => {
                 </div>
             </div>
 
+            
             <div className="newsNotification">
-            <SliderNews/>
+                <div className="newsContainer" 
+                    data-aos="fade-right" 
+                    data-aos-offset="150">
+                        <div className="newsSVG"><img className="imgSection" src={Notification}/></div>
+                        <div><SliderNews/></div>   
+                </div>
+
+                <div className="newsPhoneView"><SliderNews/></div>
             </div>
-         <Example />
+         {/* <Example /> */}
         </>
     )
 }

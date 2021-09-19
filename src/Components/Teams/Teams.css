@@ -28,4 +28,11 @@
   .waveDown {
     height: auto;
   }
+
+  #teamName {
+    font-family: "Teko", sans-serif;
+    font-size: 58px;
+    margin-left: 8vw;
+    margin-top: 62px;
+  }
 }
