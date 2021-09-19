@@ -1,13 +1,19 @@
+.events-main > h1{
+  padding:10px 20px;
+  border-left: 3px solid #e72145;
+  padding-bottom: 20px;
+  text-align: left;
+  margin: 15px;
+  margin-left: 5px;
+}
 .event-list {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   color: black;
-  position: absolute;
   background-color: black;
   transition: 0.15s;
 }
-
 .event__card-parent {
   position: relative;
   display: flex;
@@ -29,11 +35,9 @@
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
-  height: 293.641px;
+  max-height: 293.641px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  /* background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%),
-    linear-gradient(110deg, #f9224b 66%, #28336f 66%); */
   background-color: white;
 
   backdrop-filter: blur(16px) saturate(180%);
@@ -41,15 +45,16 @@
   border-radius: 12px;
 }
 .event__card-parent .card:hover {
-  min-height: 600px;
-  height: max-content;
-  display: block;
+  display: flex;
+  max-height: 800px;
+  transition: max-height 0.5s ease-in-out;
   box-shadow: 5px 5px 10px rgba(17, 25, 40, 0.863),
     -5px -5px 10px rgba(17, 25, 40, 0.514);
 }
 .event__card-parent .card > img:hover .card {
-  height: max-content;
-  transition: 0.3s ease-in;
+  display: flex;
+  max-height: 0px;
+  transition: 0.3s ease-in-out;
 }
 .event__card-parent .card .img8x_normal {
   position: relative;
@@ -71,19 +76,6 @@
   height: 293.641px;
   transition: 0.3s;
   position: relative;
-}
-.event__card-parent .card .img8x_normal > img::after {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background-color: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 11;
-  
 }
 
 .flex {
@@ -143,6 +135,7 @@
 @media (max-width: 768px) {
   .event-list {
     grid-template-columns: repeat(1, 1fr);
+    margin-top:-26px;
   }
 }
 @media (max-width: 450px) {
@@ -150,7 +143,7 @@
     padding: 0px 10px;
   }
   .event__card-parent .card {
-    height: 120px;
+    max-height: 120px;
     margin-top: 15px;
     margin-bottom: 15px;
   }

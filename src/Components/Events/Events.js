@@ -1,27 +1,50 @@
 import React from 'react'
 import EventList from './EventList'
 import './EventHeading.css'
+import waveUp from '../../SVGs/wave-8.svg'
+import waveDown from '../../SVGs/wave-5.svg'
 
 function Events() {
     return (
-      <>
-          
-          <div className="events-grandParent">   
-            <div className="Event-heading">
+      <div className="events-main" style={{backgroundColor: "black"}}> 
+          <img className="waveUp" src={waveUp}/>
+
+          <div className="Event-heading">
               <div className="Event-heading-div">
                 <h1>Welcome to Events</h1> 
               </div>
-                <div className="Event-heading_slider"></div>  
-            </div>  
-            <div className="participation-quote">
+              <div className="Event-heading_slider"></div>  
+          </div> 
+
+          <div className="participation-quote">
               <blockquote className="callout quote EN">
               No experience in this world has ever been cathartic without the willing participation of the individual. Life does not automatically bestow wisdom or growth on anyone just for showing up.<cite>  – Elizabeth Gilbert</cite>
               </blockquote>
-            </div>
+          </div>
 
+          <h1 className="past-events">Past Events</h1>
+          <div className="sampleEventsList">
               <EventList sampleEvents={sampleEvents}/>
           </div>
-      </>
+
+          <h1 className="upcoming-events">Upcoming Events</h1>
+          <div className="sampleEventsList">
+              <EventList sampleEvents={sampleEvents}/>
+          </div>
+
+
+
+          {/* <div className="events-grandParent">   
+            
+
+            
+
+            
+          </div> */}
+
+          <img className="waveDown" src={waveDown}/>
+          
+      </div>
     )
 }
 
