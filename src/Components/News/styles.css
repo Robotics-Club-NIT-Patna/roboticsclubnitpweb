@@ -88,7 +88,7 @@ button:hover span:after {
 .news {
   padding: 12px;
   width: 100%;
-  background-color: #252525;
+  background-color: #12121a;
   border-radius: 0.8rem;
   transition: transform 0.5s ease-in;
   cursor: pointer;
