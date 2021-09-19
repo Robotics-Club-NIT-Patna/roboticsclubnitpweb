@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import "./Event.css"
 import RewardList from "./RewardList"
 import AOS from "aos"
+
 function Event(props) {
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -10,7 +11,9 @@ function Event(props) {
     return (
         
             <div 
-                className="event__card-parent" data-aos="zoom-in" data-aos-anchor-placement="top-bottom"
+                className="event__card-parent" 
+                data-aos="zoom-in" 
+                data-aos-anchor-placement="top-bottom"
             >
                 <div className="card">
                     <div className="img8x_normal">

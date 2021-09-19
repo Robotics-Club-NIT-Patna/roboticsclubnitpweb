@@ -11,13 +11,9 @@
   align-items: center;
   z-index: 20;
   overflow: hidden;
-  width: 500px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   flex-basis: 0;
   margin-bottom: 30px;
+  margin-top: -170px;
 }
 
 .participation-quote {
@@ -35,7 +31,7 @@
   font-family: "Glory", sans-serif;
 }
 .Event-heading_slider {
-  height: 32px;
+  height: 40px;
   margin-left: 5px;
   width: 2px;
   border-left: 1px solid rgb(184, 183, 183);
@@ -51,6 +47,7 @@ blockquote.quote {
   font-family: "Glory", sans-serif;
   width: 80%;
   color: #484748;
+  color: white;
   margin: 1rem auto 2rem;
 }
 blockquote.EN {
@@ -94,7 +91,7 @@ blockquote.EN:after {
 }
 @keyframes slider {
   0% {
-    width: 363px;
+    width: 355px;
   }
   100% {
     width: 0px;
@@ -102,20 +99,31 @@ blockquote.EN:after {
 }
 @media (max-width: 768px) {
   .Event-heading {
-    margin-top: 9vh;
-    width: 250px;
     height: 20px;
-    margin-top: 90px;
     align-items: center;
+    margin-top: -10px;
   }
   .Event-heading-div {
     height: 30px;
+    animation: slider2 ease-in-out 3s alternate infinite;
   }
+  .Event-heading_slider {
+  height: 32px;
+  }
+
   .Event-heading-div > h1 {
     font-family: "Glory", sans-serif;
     font-size: 24px;
   }
   blockquote.quote {
     font-size: 1rem;
+  }
+  @keyframes slider2 {
+    0% {
+      width: 200px;
+    }
+    100% {
+      width: 0px;
+    }
   }
 }
