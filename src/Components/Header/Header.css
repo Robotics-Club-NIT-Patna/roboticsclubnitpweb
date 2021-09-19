@@ -72,6 +72,7 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
+  cursor: pointer;
 }
 
 .hamburger > .fade {
@@ -142,13 +143,14 @@
 .menu_left {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -100vh;
   width: 60%;
   background-color: #f9224b;
   height: 100vh;
   transform: translateY(-100vh);
   transition: 0.8s;
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -209,18 +211,25 @@
   transition: 0.8s ease-in-out;
   opacity: 0.3;
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 100px;
 }
 
-.menu_left_active,
-.menu_right_active {
-  transform: translateY(0vh) translateX(0%);
+.menu_left_active {
+  transform: translateY(0vh);
   opacity: 1;
+  top: 0vh;
+  visibility: visible;
 }
 
+.menu_right_active {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
 .menu_left_active > a {
   padding-bottom: 0;
   opacity: 1;
