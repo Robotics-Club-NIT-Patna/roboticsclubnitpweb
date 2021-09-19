@@ -1,87 +1,98 @@
 import React from 'react'
 import './SliderNews.css'
 
+const newsdata = [
+  {
+    title: "title",
+    content: "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "The page will reload if you make edits.You will also see any lint errors in the console. npm test",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Launches the test runner in the interactive watch mode.See the section about running tests for more information.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Builds the app for production to the build folder.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "If you aren’t satisfied with the build tool and configuration choices, you can eject at any time.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Instead, it will copy all the configuration files and the transitive dependencies.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "You don’t have to ever use eject. The curated feature set is suitable",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "The page will reload if you make edits.You will also see any lint errors in the console. npm test",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Launches the test runner in the interactive watch mode.See the section about running tests for more information.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Builds the app for production to the build folder.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "If you aren’t satisfied with the build tool and configuration choices, you can eject at any time.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "Instead, it will copy all the configuration files and the transitive dependencies.",
+    link: ""
+  },
+  {
+    title: "title",
+    content: "You don’t have to ever use eject. The curated feature set is suitable",
+    link: ""
+  }
+]
+
 const SliderNews = () => {
-    return (
-        
-            <div className="slider">
+  return (
+
+    <div className="slider">
       <div className="slide-track">
 
-      
-
-         <div className="slide">
-           <p className="news news1">The href attribute requires a valid value to be accessible. Provide a valid,</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">img elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, provident.</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore, mollitia hic odit praesentium possimus.</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">The href attribute requires a valid value to be accessible</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">e to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1"> Line 16:21:  The href attribute requires a valid value to be accessible. Provide a valid,</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">use a button and change it with appropriate styles. Learn more </p>
-         </div>
-
-
-         
-
-         <div className="slide">
-           <p className="news news1">The href attribute requires a valid value to be accessible. Provide a valid,</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">img elements must have an alt prop, either with meaningful text, or an empty string for decorative images</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, provident.</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore, mollitia hic odit praesentium possimus.</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">The href attribute requires a valid value to be accessible</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">e to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1"> Line 16:21:  The href attribute requires a valid value to be accessible. Provide a valid,</p>
-         </div>
-
-         <div className="slide">
-           <p className="news news1">use a button and change it with appropriate styles. Learn more </p>
-         </div>
-
-         
+        {newsdata.map((obj, i) => {
+          var pclass = "news news" + (i + 1);
+          return (
+            <div className="slide">
+              <p className={pclass}>{obj.content}</p>
+            </div>
+          )
+        })}
 
       </div>
     </div>
-       
-    )
+
+  )
 }
 
 export default SliderNews
