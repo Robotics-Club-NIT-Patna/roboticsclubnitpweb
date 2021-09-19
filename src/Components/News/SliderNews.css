@@ -10,15 +10,15 @@
 }
 .slide-track {
   margin: auto;
-  height: calc(1rem * 8);
-  animation: scroll 25s infinite linear;
+  height: auto;
+  animation: scroll 20s infinite linear;
 }
 @keyframes scroll {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-14rem * 8));
+    transform: translateY(-50%);
   }
 }
 .slide {
@@ -27,15 +27,8 @@
   height: fit-content;
   width: 90%;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   perspective: 100px;
-}
-.news-bg {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
 }
 .news {
   padding: 12px;
@@ -43,6 +36,7 @@
   background-color: black;
   border-radius: 0.8rem;
   transition: transform 0.5s ease-in;
+  text-align: center;
   cursor: pointer;
   border: 2px solid transparent;
 }

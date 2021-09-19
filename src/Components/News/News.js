@@ -15,27 +15,33 @@ import SliderNews from "./SliderNews";
 const News = () => {
   return (
         
-    <div className="news-bg">
-    
-    <h2>News</h2>
+    <div className="news_parent">
+      <img className="waveUp" src={waveUp} />
 
-    <SliderNews/>
-    <hr/>
-    <h3>Single Page</h3>
-    <div className="news__singlePageContainer">
-      <SinglePagePDFViewer pdf={samplePDF}/>
-    </div>
+      <h1>News</h1>
+      <hr />
+      <SliderNews />
+      <hr />
 
-    <hr/>
-    <h3>All Page</h3>
-    <div className="news__allPageContainer-parent">
-    <div className="news__allPageContainer-children">
-        <AllPagesPDFViewer pdf={samplePDF}/>
+      <div className="blogs_parent">
+        <h3>Single Page</h3>
+        <div className="news__singlePageContainer">
+          <SinglePagePDFViewer pdf={samplePDF} />
+        </div>
+
+        
+        <h3>All Pages</h3>
+        <div className="news__allPageContainer-parent">
+          <div className="news__allPageContainer-children">
+            <AllPagesPDFViewer pdf={samplePDF} />
+          </div>
+        </div>
       </div>
+
+      <img className="waveDown" src={waveDown} />
+
     </div>
 
-   
-  </div>
     
   );
 }
