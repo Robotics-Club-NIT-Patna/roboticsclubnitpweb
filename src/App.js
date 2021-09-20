@@ -6,6 +6,10 @@ import Home from './Components/Home/Home';
 import Teams from './Components/Teams/Teams';
 import About from './Components/About/About';
 import News from './Components/News/News'
+import Blog4 from './Components/News/blogs/Blog4';
+import Blog1 from './Components/News/blogs/Blog1';
+import Blog2 from './Components/News/blogs/Blog2';
+import Blog3 from './Components/News/blogs/Blog3';
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
 
@@ -27,7 +31,23 @@ function App() {
         <Route  exact path='/news'>
           <News/>
         </Route>
-        
+
+        <Route  exact path='/news/blog1' >
+          <Blog1/>
+        </Route>
+
+        <Route  exact path='/news/blog2' >
+          <Blog2/>
+        </Route>
+
+        <Route  exact path='/news/blog3' >
+          <Blog3/>
+        </Route>
+
+        <Route  exact path='/news/blog4' >
+          <Blog4/>
+        </Route>
+
         <Route  exact path='/events'>
           <Events />
         </Route>

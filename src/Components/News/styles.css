@@ -4,7 +4,14 @@
 }
 
 .news_parent h1 {
-  margin-top: calc( -10%);
+  padding-right: 10px;
+  font-size: 5rem ;
+  text-align: right;
+  color: #fd6e6e;
+  font-family: "Teko", sans-serif;
+}
+.news_parent h1:first-of-type{
+  margin-top: -10%;
 }
 
 .news_parent hr {
@@ -125,4 +132,116 @@
    height: 500px;
    width: 353px;
    */
+}
+
+.blogs_container > ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.blogs_container > ul > li {
+  max-width: 400px;
+  min-width: 250px;
+  float: left;
+  width: 80%;
+  margin: 0 5px 10px;
+  padding: 0px;
+}
+
+.blogs_container > ul > li:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 3px #fd6e6e81 ;
+}
+
+.blogs_container > ul > li a {
+    color: #307ee2;
+    text-decoration: none;
+}
+
+.blogs_container > ul > li .blog_thumb {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  background-color: #111111;
+  border-radius: 5px 5px 0 0;
+}
+
+.blogs_container > ul > li .blog_thumb img {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.6;
+    border-radius: 5px 5px 0 0;
+}
+
+.blogs_container > ul > li:hover .blog_thumb img, .blogs_container > ul > li:hover article{
+  opacity: 1;
+  border-color: #fd6e6e;
+}
+
+.blogs_container > ul > li .blog_thumb span {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0px;
+  background-color: rgba(255, 107, 107, 0.664);
+  padding: 3px 16px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.blogs_container > ul > li article {
+  padding: 17px;
+  margin: 0px 0 0 0;
+  border-radius: 0px;
+  background: rgb(10, 10, 10);
+  height: 190px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.8;
+  border-bottom: 3px solid rgb(20, 20, 20);
+}
+
+.blogs_container > ul > li article h3 {
+  padding: 0px 0 8px 0px;
+  color: #df3b3b;
+  text-align: left;
+  /* font-family: "uni_neuebook"; */
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.blogs_container > ul > li article p {
+  padding: 0px 0 22px 0px;
+  color: rgb(212, 212, 212);
+  text-align: left;
+  /* font-family: "uni_neuebook"; */
+  font-size: 16px;
+  font-weight: 300;
+  height: 70px;
+}
+
+.blogs_container > ul > li article .share_date {
+  position: absolute;
+  bottom: 14px;
+  left: 17px;
+  right: 17px;
+  color: #7a4e4e;
+  font-size: 14px;
+}
+
+.blogs_container > ul > li article .share_dev {
+  float: right;
+  font-size: 15px;
+  color: #00ffdd;
+  position: relative;
 }
