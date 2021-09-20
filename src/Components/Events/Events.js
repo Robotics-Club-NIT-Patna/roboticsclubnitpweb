@@ -1,26 +1,35 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import EventList from './EventList'
 import './EventHeading.css'
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
+import AI from '../../SVGs/ai.svg'
+import AOS from "aos"
+import 'aos/dist/aos.css';
 
 function Events() {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+}, [])
     return (
       <div className="events-main" style={{backgroundColor: "black"}}> 
-          <img className="waveUp" src={waveUp}/>
+          {/* <img className="waveUp" src={waveUp}/> */}
 
-          <div className="Event-heading">
-              <div className="Event-heading-div">
-                <h1>Welcome to Events</h1> 
-              </div>
-              <div className="Event-heading_slider"></div>  
-          </div> 
+          <div className="EventsMainPage">
+            <div className="quotesContainer">
+              <h1 data-aos="zoom-in" class="quote-text">Creating the next generation of innovators and change makers.</h1>
+              <img data-aos="fade-up-right" className="aiSVG" src={AI} alt=""/>
+            </div>
 
-          <div className="participation-quote">
+            <div data-aos="zoom-in" className="participation-quote">
               <blockquote className="callout quote EN">
               No experience in this world has ever been cathartic without the willing participation of the individual. Life does not automatically bestow wisdom or growth on anyone just for showing up.<cite>  – Elizabeth Gilbert</cite>
               </blockquote>
+            </div>
           </div>
+
+
+          
 
           <h1 className="past-events">Past Events</h1>
           <div className="sampleEventsList">
@@ -33,17 +42,7 @@ function Events() {
           </div>
 
 
-
-          {/* <div className="events-grandParent">   
-            
-
-            
-
-            
-          </div> */}
-
           <img className="waveDown" src={waveDown}/>
-          
       </div>
     )
 }

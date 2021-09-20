@@ -1,79 +1,143 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
-.Event-heading {
-  padding: 50px 0px;
-  font-size: 2rem;
+
+.EventsMainPage {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  z-index: 20;
-  overflow: hidden;
-  flex-basis: 0;
-  margin-bottom: 30px;
-  margin-top: -170px;
+  background: url("../../SVGs/circle.svg");
+  background-size: cover;
+  padding: 0rem 3.5rem;
 }
 
-.participation-quote {
-  margin: 60px 0px;
+.quotesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
-.Event-heading-div {
-  overflow: hidden;
-  display: block;
-  animation: slider ease-in-out 3s alternate infinite;
-  height: 54px;
-  width: 363px;
-  transition: 0.3s;
+
+.quotesContainer .aiSVG {
+  width: 450px;
+  animation: zoomInOut 1s linear infinite;
 }
-.Event-heading-div > h1 {
-  font-family: "Glory", sans-serif;
+
+@keyframes zoomInOut {
+  0% {
+    transform: translateY(50px);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
 }
-.Event-heading_slider {
-  height: 40px;
-  margin-left: 5px;
-  width: 2px;
-  border-left: 1px solid rgb(184, 183, 183);
-  background-color: rgb(184, 183, 183);
+
+.EventsMainPage h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 6em;
+  width: 9em;
+  line-height: 0.9em;
+  text-align: left;
+  padding-top: 1.7em;
+}
+
+.quote-text {
+  background: #ca4246;
+  background-color: #ca4246;
+  background: conic-gradient(
+    #f9224b 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #a7489b 66.666%,
+    #f9224b 73.333%,
+    #f9224b 73.333%
+  );
+  background-size: 57%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: quote-text-animation-rev 0.5s ease forwards;
+}
+
+.quote-text:hover {
+  animation: quote-text-animation 0.5s ease forwards;
+}
+
+@keyframes quote-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+@keyframes quote-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
 }
 
 blockquote.quote {
   position: relative;
-  text-align: center;
-  padding: 1rem 1.2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Glory", sans-serif;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
   width: 80%;
-  color: #484748;
   color: white;
-  margin: 1rem auto 2rem;
+  margin-top: 1rem;
 }
 blockquote.EN {
-  background: linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%,
-    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0,
-    linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0,
-    linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+  background: linear-gradient(to right, #f9224b 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #f9224b 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #f9224b 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #f9224b 4px, transparent 4px) 0 100%;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 14px 14px;
 }
 
 blockquote.DE {
-  background: linear-gradient(to right, #039be5 4px, transparent 4px) 0% 0%,
-    linear-gradient(to bottom, #039be5 4px, transparent 4px) 0% 0%,
-    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 100%,
-    linear-gradient(to top, #039be5 4px, transparent 4px) 100% 100%;
+  background: linear-gradient(to right, #f9224b 4px, transparent 4px) 0% 0%,
+    linear-gradient(to bottom, #f9224b 4px, transparent 4px) 0% 0%,
+    linear-gradient(to left, #f9224b 4px, transparent 4px) 100% 100%,
+    linear-gradient(to top, #f9224b 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 14px 14px;
 }
 
 blockquote.quote:before,
 blockquote.quote:after {
   font-family: fontAwesome;
   position: absolute;
-  color: #039be5;
-  font-size: 34px;
+  color: #f9224b;
+  font-size: 24px;
 }
 
 blockquote.EN:before {
@@ -89,41 +153,79 @@ blockquote.EN:after {
   top: auto;
   bottom: -20px;
 }
-@keyframes slider {
-  0% {
-    width: 355px;
+
+@media (max-width: 1024px) {
+  blockquote.quote {
+    font-size: 1.4rem;
+    width: 85vw;
   }
-  100% {
-    width: 0px;
-  }
-}
-@media (max-width: 768px) {
-  .Event-heading {
-    height: 20px;
-    align-items: center;
-    margin-top: -10px;
-  }
-  .Event-heading-div {
-    height: 30px;
-    animation: slider2 ease-in-out 3s alternate infinite;
-  }
-  .Event-heading_slider {
-  height: 32px;
+  .EventsMainPage h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 4.7em;
+    width: 85vw;
+    line-height: 0.9em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.7em;
   }
 
-  .Event-heading-div > h1 {
-    font-family: "Glory", sans-serif;
-    font-size: 24px;
+  .EventsMainPage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+  .aiSVG {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   blockquote.quote {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    width: 85vw;
   }
-  @keyframes slider2 {
-    0% {
-      width: 200px;
-    }
-    100% {
-      width: 0px;
-    }
+  .EventsMainPage h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2.7em;
+    width: 90vw;
+    line-height: 0.9em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .EventsMainPage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  blockquote.quote {
+    font-size: 0.6rem;
+    width: 85vw;
+  }
+  .EventsMainPage h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2.3em;
+    width: 85vw;
+    line-height: 0.9em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+  }
+
+  .EventsMainPage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
