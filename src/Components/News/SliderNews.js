@@ -3,75 +3,110 @@ import './SliderNews.css'
 
 const newsdata = [
   {
-    title: "title",
-    content: "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    title: "Robotica blog 1",
+    content: " Robotica's 1st Blog - `3D Printing` is out now ",
+    link: "/news/blog1"
+  },
+  {
+    title: "Robotica blog 2",
+    content: " Robotica's 2nd Blog - `Will Automation Lead To Mass Unemployment ?` is out now ",
+    link: "/news/blog2"
+  },
+  {
+    title: "Robotica blog 3",
+    content: " Robotica's 3rd Blog - `How useful have robots been during this Pandemic ?` is out now ",
+    link: "/news/blog3"
+  },
+  {
+    title: "Robotica blog 4",
+    content: " Robotica's 4th Blog - `Intro to BlockChain` is out now ",
+    link: "/news/blog4"
+  },
+  {
+    title: "Robotica blog 5",
+    content: " Robotica's 5th Blog - `Data Privacy and Data Breach` is out now ",
     link: ""
   },
   {
-    title: "title",
-    content: "The page will reload if you make edits.You will also see any lint errors in the console. npm test",
+    title: "Robotica blog 6",
+    content: " Robotica's 6th Blog - `5G Technology` is out now ",
     link: ""
   },
   {
-    title: "title",
-    content: "Launches the test runner in the interactive watch mode.See the section about running tests for more information.",
+    title: "Robotica blog 7",
+    content: " Robotica's 7th Blog - `Green Computing` is out now ",
     link: ""
   },
   {
-    title: "title",
-    content: "Builds the app for production to the build folder.",
+    title: "Robotica blog 1",
+    content: "3D Printing",
+    link: "/news/blog1"
+  },
+  {
+    title: "Robotica blog 2",
+    content: "Will Automation Lead To Mass Unemployment ?",
+    link: "/news/blog2"
+  },
+  {
+    title: "Robotica blog 3",
+    content: "How useful have robots been during this Pandemic ?",
+    link: "/news/blog3"
+  },
+  {
+    title: "Robotica blog 4",
+    content: "Intro to BlockChain",
+    link: "/news/blog4"
+  },
+  {
+    title: "Robotica blog 5",
+    content: "Data Privacy and Data Breach",
     link: ""
   },
   {
-    title: "title",
-    content: "If you aren’t satisfied with the build tool and configuration choices, you can eject at any time.",
+    title: "Robotica blog 6",
+    content: "5G Technology",
     link: ""
   },
   {
-    title: "title",
-    content: "Instead, it will copy all the configuration files and the transitive dependencies.",
+    title: "Robotica blog 7",
+    content: "Green Computing",
     link: ""
   },
   {
-    title: "title",
-    content: "You don’t have to ever use eject. The curated feature set is suitable",
+    title: "Robotica blog 1",
+    content: " Robotica's 1st Blog - `3D Printing` is out now ",
+    link: "/news/blog1"
+  },
+  {
+    title: "Robotica blog 2",
+    content: " Robotica's 2nd Blog - `Will Automation Lead To Mass Unemployment ?` is out now ",
+    link: "/news/blog2"
+  },
+  {
+    title: "Robotica blog 3",
+    content: " Robotica's 3rd Blog - `How useful have robots been during this Pandemic ?` is out now ",
+    link: "/news/blog3"
+  },
+  {
+    title: "Robotica blog 4",
+    content: " Robotica's 4th Blog - `Intro to BlockChain` is out now ",
+    link: "/news/blog4"
+  },
+  {
+    title: "Robotica blog 5",
+    content: " Robotica's 5th Blog - `Data Privacy and Data Breach` is out now ",
     link: ""
   },
   {
-    title: "title",
-    content: "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    title: "Robotica blog 6",
+    content: " Robotica's 6th Blog - `5G Technology` is out now ",
     link: ""
   },
   {
-    title: "title",
-    content: "The page will reload if you make edits.You will also see any lint errors in the console. npm test",
+    title: "Robotica blog 7",
+    content: " Robotica's 7th Blog - `Green Computing` is out now ",
     link: ""
   },
-  {
-    title: "title",
-    content: "Launches the test runner in the interactive watch mode.See the section about running tests for more information.",
-    link: ""
-  },
-  {
-    title: "title",
-    content: "Builds the app for production to the build folder.",
-    link: ""
-  },
-  {
-    title: "title",
-    content: "If you aren’t satisfied with the build tool and configuration choices, you can eject at any time.",
-    link: ""
-  },
-  {
-    title: "title",
-    content: "Instead, it will copy all the configuration files and the transitive dependencies.",
-    link: ""
-  },
-  {
-    title: "title",
-    content: "You don’t have to ever use eject. The curated feature set is suitable",
-    link: ""
-  }
 ]
 
 const SliderNews = () => {
@@ -84,7 +119,7 @@ const SliderNews = () => {
           var pclass = "news news" + (i + 1);
           return (
             <div className="slide">
-              <p className={pclass}>{obj.content}</p>
+              <p className={pclass}><a href={obj.link} target="_parent">{obj.content}</a></p>
             </div>
           )
         })}
