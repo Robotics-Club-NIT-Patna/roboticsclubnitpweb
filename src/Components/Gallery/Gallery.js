@@ -176,9 +176,6 @@ const Gallery =() => {
             </div>
             <div className={model? "model open" : "model"} >
                 <img src={tempimgSrc} className = "clickImg"/>
-                <div className="detail">
-                    <div>{tempimgContSrc}</div>
-                </div>
                 <CloseIcon onClick={() => setModel(false)}/>
             </div>
             <div className = "gallery">
@@ -190,7 +187,7 @@ const Gallery =() => {
                     )
                 })}
             </div>
-            <img className="waveDown" src={waveDown}/>
+            {/* <img className="waveDown" src={waveDown}/> */}
 
         </div>
     )

@@ -1,0 +1,112 @@
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+}
+
+.cardEventCarousel {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.cardEventCarousel .card_part::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100vw);
+  background-image: url("./robowars.jpg");
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  animation: opaqTransition 20s ease-in infinite;
+}
+
+.card_part h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  z-index: 300;
+}
+.card_part h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  width: 65%;
+  z-index: 300;
+  word-spacing: 10px;
+}
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url("./chakravyuh.jpg");
+  animation-delay: 5s;
+  background-position: center;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url("./lionkingdom.jpg");
+  animation-delay: 10s;
+  background-position: center;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url("./3dprinting-2.jpg");
+  animation-delay: 15s;
+}
+
+@keyframes opaqTransition {
+  3% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  28% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .card_part h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 300;
+  }
+  .card_part h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    width: 100%;
+    z-index: 300;
+    word-spacing: 7px;
+  }
+}

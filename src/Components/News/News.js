@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
 import Sharex from './Share'
+
+
+
+
+
 import "./styles.css";
 import SliderNews from "./SliderNews";
 
@@ -128,30 +133,7 @@ const News = () => {
 
         </ul>
       </div>
-      <h1>News</h1>
-      <hr />
-      <SliderNews />
-      <hr />
-
-      {/* <div className="blogs_parent">
-        <h3>Single Page</h3>
-        <div className="news__singlePageContainer">
-          <SinglePagePDFViewer pdf={samplePDF} />
-        </div>
-
-
-        <h3>All Pages</h3>
-        <div className="news__allPageContainer-parent">
-          <div className="news__allPageContainer-children">
-            <AllPagesPDFViewer pdf={samplePDF} />
-          </div>
-        </div>
-      </div> */}
-
-
-
       <img className="waveDown" src={waveDown} />
-
     </div>
 
 

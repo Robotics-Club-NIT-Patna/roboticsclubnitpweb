@@ -4,14 +4,13 @@
   column-count: 3;
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
-  column-width: 33%;
-  padding: 0 12px;
+  column-width: 33.3%;
   margin-top: 12px;
-  margin: 3%;
+  margin: 3% 3% 0 3%;
+  padding-bottom: 3%;
 }
-.pics{
+.pics {
   background-color: #f9224b;
-  padding: 2%;
 }
 
 .text {
@@ -34,19 +33,16 @@
   cursor: pointer;
   margin-bottom: 12px;
 }
-.gallery .pics :hover{
+.gallery .pics :hover {
   filter: drop-shadow(16px 16px 10px black);
-  transform: scale(1.12) ;
-  transition-delay: 400ms;
-  transition: opacity .5s ease , visibility .5s ease , transform .5s ease-in-out;
+  transform: scale(0.9);
+  /* transition-delay: 400ms; */
 
   opacity: 1;
   transition-timing-function: ease;
   overflow: hidden;
   /* transition: transform .4s scale(1.05),transform .4s scale(1.1); */
-  
 }
-
 
 @media (max-width: 990px) {
   .gallery {
@@ -70,63 +66,40 @@
   height: 100%;
   position: fixed;
   top: 0%;
-  /* left: 0%; */
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  /* background-color: black; */
-  transition: opacity 0.4s ease, visibility 0.4s ease,
-    transform 0.5s ease-in-out;
   visibility: hidden;
   opacity: 0;
   transform: scale(0);
   overflow: hidden;
   z-index: 999;
-  font-size: 1rem;
-  /* background-image: url(	http://localhost:3000/static/media/bg-news.9a07fd45.svg); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./Background_Img.png');
- 
-  /* margin-right: 20%;
-  margin-left: 20%; */
-
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5rem);
+  box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.1);
 }
 .open {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-}
-.model img {
-  width: auto;
-  max-width: 150%;
-  height: auto;
-  display: flexbox;
-  line-height: 0%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 20% 10%;
-  max-height: 100%;
-  left: 0em;
-  right: 0%;
-}
-.model .clickImg{
-  display:block;
-  order:2;
-  width:50%;
-  align-items: center;
-  /* margin-left: 25%;
-  margin-top: 0%; */
   margin: auto;
-  }
+}
+.model .clickImg {
+  width: 90%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 10%;
+  align-items: center;
+  margin: auto;
+}
 .open svg {
   position: fixed;
   top: 2.6rem;
   right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  padding: 5px;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
   background-color: black;
   color: #f9224b;
   cursor: pointer;
@@ -138,48 +111,66 @@
   margin-right: 8%;
   text-align: left;
 }
-.model .detail{
+.model .detail {
   font-family: New Century Schoolbook, serif;
   align-items: center;
   display: wrap;
   margin: 5%;
-  margin-right: 10% ;
+  margin-right: 10%;
   border-block: 10px;
   box-sizing: content-box;
   /* overflow: hidden; */
-  
 }
-@media screen and (max-width:1000px)
-{
-.model
-{
-flex-flow:row wrap;
-}
-.model .clickImg{
-display:block;
-order:1;
-/* width: auto;
+@media screen and (max-width: 1000px) {
+  .model {
+    flex-flow: row wrap;
+  }
+  .model .clickImg {
+    display: block;
+    order: 1;
+    /* width: auto;
 height: auto; */
-}
-.model .clickImg{
-display:block;
-order:2;
-width:50%;
-align-items: center;
-/* margin-left: 25%;
+  }
+  .model .clickImg {
+    display: block;
+    order: 2;
+    width: 50%;
+    align-items: center;
+    /* margin-left: 25%;
 margin-top: 0%; */
-margin: auto;
+    margin: auto;
+  }
+  .model .clickImg .detail {
+    padding: 2%;
+  }
+  .model .clicImg .detail {
+    margin-bottom: 2%;
+  }
+  .clicImg {
+    align-items: center;
+    margin-left: 15%;
+  }
 }
-.model .clickImg .detail
-{
-padding:2%;
-}
-.model .clicImg .detail
-{
-margin-bottom:2%;
-}
-.clicImg{
-  align-items: center;
-  margin-left: 15%;
-}
+
+@media (max-width: 768px) {
+  .model .clickImg {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .parent {
+    background: url("../../SVGs/bearers.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    background-color: black;
+    padding-top: 9em;
+  }
+
+  .waveUp {
+    display: none;
+  }
 }

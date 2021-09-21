@@ -1,0 +1,77 @@
+.ClubOfficials {
+  padding: 20px;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../../SVGs/bearers3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+.ClubOfficials .OfcBearersHeading h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-align: end;
+  animation: letterSpacing 1s linear;
+  padding: 20px 40px 0px 20px;
+}
+
+@keyframes letterSpacing {
+  0% {
+    letter-spacing: 20px;
+  }
+
+  100% {
+    letter-spacing: 3px;
+  }
+}
+
+.ClubOfficialsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .ClubOfficials {
+    background: none;
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .ClubOfficialsContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .ClubOfficials {
+    background: none;
+    background-color: black;
+  }
+
+  .ClubOfficials .OfcBearersHeading h1 {
+    font-family: "Teko", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+    animation: letterSpacing 1s linear;
+    padding: 20px;
+  }
+}
