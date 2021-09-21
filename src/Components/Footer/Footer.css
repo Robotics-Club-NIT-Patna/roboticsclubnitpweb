@@ -1,0 +1,50 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer .FooterStrip {
+  background-color: #f9224b;
+  color: black;
+  height: fit-content;
+  overflow: scroll;
+}
+
+.Footer .FooterStrip h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  /* margin-top: auto; */
+  margin-bottom: auto;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.Footer .FooterElement {
+  background-color: black;
+}
+
+.Footer .FooterElement .clubInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Footer .FooterElement .clubInfo .address {
+  color: rgb(139, 137, 137);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+.Footer .FooterElement .clubInfo .name {
+  font-family: "Teko", sans-serif;
+  font-size: 52px;
+  margin-top: 0px;
+}

@@ -3,8 +3,6 @@ import './About.css'
 import SVG from '../../SVGs/aboutUs.svg'
 import whatWeDo from '../../SVGs/whatWeDo.svg'
 import fewWords from '../../SVGs/fewWords.svg'
-import SliderNews from '../News/SliderNews'
-import Notification from '../../SVGs/notification.svg'
 import AOS from "aos"
 import Example from './Carousel/Slideshow'
 import 'aos/dist/aos.css';
@@ -42,18 +40,6 @@ const About = () => {
                     <h1 data-aos="zoom-in" id="fewWordsHead">Few Words from Our PI</h1>
                     <p data-aos="zoom-in">It is my pleasure to introduce one of the most esteemed clubs of NIT Patna, the Robotics Club. Formed in the year 2015 by a bunch of not more than 8 students with vision of augmenting innovation and technical culture in the college. In this short span of time, Robotics Club managed to achieve an identity among college clubs at State-level. With its members ranging from coders to designers to hardware enthusiasts, they have been conducting an array of events around the year, thus enhancing the students' technical skills and making them aware of the fascinating world of automation, robotics, and electronics surrounding them. They are also promoting robotics among students of other nearby schools and colleges so that those students who lack resources also get equal opportunity to explore this fascinating domain. Members of this club have represented our college in several inter-college technical competitions, ideathons, and hackathons. The club has done a range of projects on IoT, drones, 3D designing, Bot fabrication, etc. Presently, members are actively engaged in working on a number of advanced projects like an AI-based attendance system and an automated bot for restaurants. Events like Robowars, Tiger's Nest, draws huge participation and audience. The club has been pretty successful in creating an atmosphere in the campus where people with different ideas could collaborate together to give shape to their ideas. I hope that the club continues doing so and keep making our college proud.</p>
                 </div>
-            </div>
-
-            
-            <div className="newsNotification">
-                <div className="newsContainer" 
-                    data-aos="fade-right" 
-                    data-aos-offset="150">
-                        <div className="newsSVG"><img className="imgSection" src={Notification}/></div>
-                        <div><SliderNews/></div>   
-                </div>
-
-                <div className="newsPhoneView"><SliderNews/></div>
             </div>
          {/* <Example /> */}
         </>

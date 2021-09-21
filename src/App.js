@@ -12,6 +12,10 @@ import Blog2 from './Components/News/blogs/Blog2';
 import Blog3 from './Components/News/blogs/Blog3';
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
+import Footer from './Components/Footer/Footer';
+import Carousel from './Components/EventsCarousel/Carousel';
+import ClubOfficials from './Components/ClubOfficials/ClubOfficials';
+import Notification from './Components/Notification/Notification';
 
 function App() {
   return (
@@ -22,6 +26,9 @@ function App() {
         <Route exact path='/'>
           <Home/>
           <About/>
+          <ClubOfficials/>
+          <Notification/>
+          <Carousel/>
         </Route>
 
         <Route exact path='/team'>
@@ -57,7 +64,7 @@ function App() {
         </Route>
 
       </Switch>
-      
+      <Footer/>
     </div>
   );
 }
