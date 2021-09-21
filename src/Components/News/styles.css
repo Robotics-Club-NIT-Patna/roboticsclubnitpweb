@@ -1,6 +1,7 @@
 .news_parent {
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .news_parent h1 {
@@ -43,7 +44,7 @@
   transform: rotate(180deg);
   border-radius: 0rem 0rem 2rem 2rem;
 } 
-
+/* 
 
 .news_parent button {
   border-radius: 4px;
@@ -132,7 +133,7 @@
    height: 500px;
    width: 353px;
    */
-}
+/* }  */
 
 .blogs_container > ul{
   display: flex;
