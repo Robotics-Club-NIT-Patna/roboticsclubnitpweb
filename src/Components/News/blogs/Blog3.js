@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import waveUp from '../../../SVGs/wave-8.svg'
 import waveDown from '../../../SVGs/wave-5.svg'
+import Sharex from '../Share'
 import './blog.css'
 const Blog3 = () => {
 
+    const [showSharex, setShowSharex] = useState(false);
+    const handleSharex = () => {
+        setShowSharex(!showSharex);
+    }
     var blogTitle = "How useful have robots been during this Pandemic ?";
     var blogCredits = ["Name", "Branch", "RollNo"];
 
     return (
-        <div className="blog_parent" 
-        >
+        <div className="blog_parent">
             {/* <img className="waveUp" src={waveUp} /> */}
+
+            <Sharex
+                show={showSharex}
+                title={"\n Read this amazing blog *" + blogTitle + "* on \n"}
+                shortInfo={"We all know that its COVID time. Nobody can touch each other. Think of a thing, even when it touches we don't have risk, but yet..."}
+                shareUrl="https://roboticsnitp.co.in/news/third"
+            />
+            <span
+                className={showSharex ? "toggle_sharex_btn fa fa-close" : "toggle_sharex_btn fa fa-share"}
+                onClick={() => { handleSharex() }}
+                title="Share this Blog" />
+
+            <div className={showSharex ? "blog_me blurbg" : "blog_me"} style={{ transition: "0.8ms" }}>
+
             <h1 className="blog_title"> {blogTitle} </h1>
             <div className="blog_image">
                 <img src="https://roboticsnitp.co.in/assets/news/Month2.jpg" alt="blog image"></img>
@@ -38,6 +56,7 @@ const Blog3 = () => {
             </div>
             <div className="blog_credits">
                 This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
+            </div>
             </div>
             <img className="waveDown" src={waveDown} />
         </div>
