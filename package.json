@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@glidejs/glide": "^3.4.1",
@@ -21,6 +22,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-share": "^4.4.0",
+    "react-spinners": "^0.11.0",
     "react-spring": "^8.0.27",
     "react-spring-3d-carousel": "^1.2.1",
     "uuid": "^8.3.2",
