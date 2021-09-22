@@ -175,7 +175,7 @@ const Gallery =() => {
                 Our Gallery
             </div>
             <div className={model? "model open" : "model"} >
-                <img src={tempimgSrc} className = "clickImg"/>
+                <img src={tempimgSrc} height="100%" overflow="hidden" className = "clickImg"/>
                 <CloseIcon onClick={() => setModel(false)}/>
             </div>
             <div className = "gallery">
