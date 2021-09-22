@@ -1,7 +1,6 @@
 .news_parent {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #000;
 }
 
 .news_parent h1 {
@@ -44,96 +43,6 @@
   transform: rotate(180deg);
   border-radius: 0rem 0rem 2rem 2rem;
 } 
-/* 
-
-.news_parent button {
-  border-radius: 4px;
-  background-color: #dc3545;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  width: 100px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.news_parent button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.news_parent button span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.news_parent button:hover span {
-  padding-right: 25px;
-}
-
-.news_parent button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.news_parent .react-pdf__Page {
-  padding-bottom: 2.5px;
-  width: auto;
-}
-
-.news_parent .news__singlePageContainer .react-pdf__Page__canvas {
-  margin: 0 auto;
-  border-radius: 10px;
-}
-.news_parent .react-pdf__Page__canvas {
-  margin: 0 auto;
-  border-radius: 5px;
-}
-.news_parent .news__allpagePdf-document {
-  background: linear-gradient(145deg, #6e6e6e, #838383);
-  border-radius: 50px;
-  -webkit-box-shadow: 2px 2px 6px #686868, -2px -2px 6px #8c8c8c;
-          box-shadow: 2px 2px 6px #686868, -2px -2px 6px #8c8c8c;
-}
-
-.news_parent .react-pdf__Page__annotations .annotationLayer {
-  border-radius: 20px;
-}
-
-.news_parent .news__allPageContainer-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.news_parent .news__allPageContainer-children {
-  height: 100%;
-  max-height: 100vh;
-  margin-top: 20px;
-  overflow: auto;
-}
-@media (max-width: 768px) {
-  /* the only thing left is to make changes to height and width of canvas as follows
-   height: 500px;
-   width: 353px;
-   */
-/* }  */
 
 .blogs_container > ul{
   display: flex;
@@ -215,7 +124,6 @@
   padding: 0px 0 8px 0px;
   color: #df3b3b;
   text-align: left;
-  /* font-family: "uni_neuebook"; */
   font-size: 18px;
   font-weight: 800;
   line-height: 18px;
@@ -225,7 +133,6 @@
   padding: 0px 0 22px 0px;
   color: rgb(212, 212, 212);
   text-align: left;
-  /* font-family: "uni_neuebook"; */
   font-size: 16px;
   font-weight: 300;
   height: 70px;

@@ -10,7 +10,7 @@
           box-shadow: 2px 2px 5px #00000085, 0px 0px 8px 8px #16161686, 0 0 10px 15px #20202085;
   margin: 0 !important;
   padding: 0 !important;
-  z-index: 105;
+  z-index: 30;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: 0.8s;
