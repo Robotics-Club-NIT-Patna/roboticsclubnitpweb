@@ -23,14 +23,10 @@ import img21 from './21.JPG'
 import img22 from './22.JPG'
 import img23 from './23.JPG'
 import img24 from './24.JPG'
-import Bg from './Background_Img.png'
 import CloseIcon from '@material-ui/icons/Close';
-
-import './Gallery.css'
 import waveUp from '../../SVGs/wave-8.svg'
-import waveDown from '../../SVGs/wave-5.svg'
+import './Gallery.css'
 import AOS from "aos";
-import { getQueriesForElement } from '@testing-library/react'
 
 const Gallery =() => {
     useEffect(() => {
@@ -170,19 +166,19 @@ const Gallery =() => {
     return (
         <div className = "parent" >
             
-            <img className="waveUp" src={waveUp}/>
+            <img className="waveUp" src={waveUp} alt=""/>
             <div className = {"title"}>
                 Our Gallery
             </div>
             <div className={model? "model open" : "model"} >
-                <img src={tempimgSrc} height="100%" overflow="hidden" className = "clickImg"/>
+                <img src={tempimgSrc}  className = "clickImg" alt=""/>
                 <CloseIcon onClick={() => setModel(false)}/>
             </div>
             <div className = "gallery">
                 {data.map((item, index)=>{
                     return(
                         <div className = "pics" key ={index} onClick={()=>getImg(item.imgSrc,item.contSrc) }>
-                            <img src={item.imgSrc} style={{ width: '100%' }} data-aos="zoom-in" data-aos-anchor-placement="left-bottom" /> 
+                            <img src={item.imgSrc} style={{ width: '100%' }} data-aos="zoom-in" data-aos-anchor-placement="left-bottom" alt="" /> 
                         </div> 
                     )
                 })}

@@ -1,10 +1,13 @@
-.events-main > h1{
-  padding:10px 20px;
+.events-main > h1 {
+  padding: 10px 20px;
   border-left: 3px solid #e72145;
-  padding-bottom: 20px;
-  text-align: left;
   margin: 15px;
-  margin-left: 5px;
+  margin-left: 40px;
+  font-family: "Teko", sans-serif;
+  font-weight: 800;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-align: left;
 }
 .event-list {
   display: grid;
@@ -135,7 +138,7 @@
 @media (max-width: 768px) {
   .event-list {
     grid-template-columns: repeat(1, 1fr);
-    margin-top:-26px;
+    margin-top: -26px;
   }
 }
 @media (max-width: 450px) {

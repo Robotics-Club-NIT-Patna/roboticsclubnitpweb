@@ -4,7 +4,6 @@ import SVG from '../../SVGs/aboutUs.svg'
 import whatWeDo from '../../SVGs/whatWeDo.svg'
 import fewWords from '../../SVGs/fewWords.svg'
 import AOS from "aos"
-import Example from './Carousel/Slideshow'
 import 'aos/dist/aos.css';
 
 
@@ -16,7 +15,7 @@ const About = () => {
         <>
             <div className="about">
                 <div data-aos="fade-up-right">
-                    <div className="aboutSVG"><img className="imgSection" src={SVG}/></div>
+                    <div className="aboutSVG"><img className="imgSection" src={SVG} alt=""/></div>
                 </div>
                
                 <div className="aboutContent">
@@ -27,7 +26,7 @@ const About = () => {
             </div>
 
             <div className="whatWeDo">
-                <div data-aos="zoom-in" className="whatWeDoSVG"><img className="imgSection" src={whatWeDo}/></div>
+                <div data-aos="zoom-in" className="whatWeDoSVG"><img className="imgSection" src={whatWeDo} alt=""/></div>
                 <div className="whatWeDoContent">
                     <h1 data-aos="zoom-in" id="whatWeDoHead">What We Do</h1>
                     <p data-aos="zoom-in">Does robots fascinates you and have you ever fantasized to build one for yourself? The Robotics club NIT Patna is the place! The Robotics club at NIT Patna strives to stimulate interest in robotics among the students of the institute.Today robotics is a rapidly growing field,as technological advances continue researching designing and building new robots serve various practical purposes.Robotics is a field which is not limited to a particular branch and is way more diverse than our own imagination and so is our student club.We are a diverse group of robotics nerds who find roots across all academic departments of the Institute. We at Robotics club believe in working and growing together.You can know more about us from here. #Hail Robotics.</p>
@@ -35,13 +34,12 @@ const About = () => {
             </div>
 
             <div className="fewWords">
-                <div data-aos="fade-up-right" className="fewWordsSVG"><img className="imgSection" src={fewWords}/></div>
+                <div data-aos="fade-up-right" className="fewWordsSVG"><img className="imgSection" src={fewWords} alt=""/></div>
                 <div className="fewWordsContent">
                     <h1 data-aos="zoom-in" id="fewWordsHead">Few Words from Our PI</h1>
                     <p data-aos="zoom-in">It is my pleasure to introduce one of the most esteemed clubs of NIT Patna, the Robotics Club. Formed in the year 2015 by a bunch of not more than 8 students with vision of augmenting innovation and technical culture in the college. In this short span of time, Robotics Club managed to achieve an identity among college clubs at State-level. With its members ranging from coders to designers to hardware enthusiasts, they have been conducting an array of events around the year, thus enhancing the students' technical skills and making them aware of the fascinating world of automation, robotics, and electronics surrounding them. They are also promoting robotics among students of other nearby schools and colleges so that those students who lack resources also get equal opportunity to explore this fascinating domain. Members of this club have represented our college in several inter-college technical competitions, ideathons, and hackathons. The club has done a range of projects on IoT, drones, 3D designing, Bot fabrication, etc. Presently, members are actively engaged in working on a number of advanced projects like an AI-based attendance system and an automated bot for restaurants. Events like Robowars, Tiger's Nest, draws huge participation and audience. The club has been pretty successful in creating an atmosphere in the campus where people with different ideas could collaborate together to give shape to their ideas. I hope that the club continues doing so and keep making our college proud.</p>
                 </div>
             </div>
-         {/* <Example /> */}
         </>
     )
 }

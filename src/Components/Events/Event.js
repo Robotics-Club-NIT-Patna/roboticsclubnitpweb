@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import "./Event.css"
 import RewardList from "./RewardList"
 import AOS from "aos"
@@ -7,7 +7,7 @@ function Event(props) {
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, [])
-    const { id, image, description, heading, rewards, clicked } = props
+    const {image, description, heading, rewards} = props
     return (
         
             <div 
@@ -17,7 +17,7 @@ function Event(props) {
             >
                 <div className="card">
                     <div className="img8x_normal">
-                        <img src={image}  alt="image" />
+                        <img src={image}  alt="" />
                     </div>
                     <div className="content">
                         <h3>{heading}</h3>

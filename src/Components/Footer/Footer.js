@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import SyncAltIcon from '@mui/icons-material/SyncAlt';
 import RoomIcon from '@material-ui/icons/Room';
 import logo from '../../logos/logo1.png'
 import { Link } from 'react-router-dom';

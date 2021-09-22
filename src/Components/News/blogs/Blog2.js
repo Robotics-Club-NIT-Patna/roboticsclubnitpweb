@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import waveUp from '../../../SVGs/wave-8.svg'
 import waveDown from '../../../SVGs/wave-5.svg'
-import Sharex from '../Share'
+import Sharex from '../ShareNews/Share'
 import './blog.css'
 const Blog2 = () => {
 

@@ -24,9 +24,13 @@
 }
 
 @media (max-width: 768px) {
-  .waveUp,
-  .waveDown {
-    height: auto;
+  .Teams {
+    background: url("../../SVGs/bearers.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    background-color: black;
+    padding-top: 9em;
   }
 
   #teamName {
