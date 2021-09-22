@@ -1,6 +1,6 @@
 import React from 'react'
 import './Notification.css'
-import SliderNews from '../News/SliderNews'
+import SliderNews from '../News/SliderNews/SliderNews'
 import NotificationSVG from '../../SVGs/notification.svg'
 
 const Notification = () => {

@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 import EventList from './EventList'
 import './EventHeading.css'
-import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
 import AI from '../../SVGs/ai.svg'
 import AOS from "aos"
@@ -13,8 +12,6 @@ function Events() {
 }, [])
     return (
       <div className="events-main" style={{backgroundColor: "black"}}> 
-          {/* <img className="waveUp" src={waveUp}/> */}
-
           <div className="EventsMainPage">
             <div className="quotesContainer">
               <h1 data-aos="zoom-in" class="quote-text">Creating the next generation of innovators and change makers.</h1>
@@ -42,7 +39,7 @@ function Events() {
           </div>
 
 
-          <img className="waveDown" src={waveDown}/>
+          <img className="waveDown" src={waveDown} alt=""/>
       </div>
     )
 }

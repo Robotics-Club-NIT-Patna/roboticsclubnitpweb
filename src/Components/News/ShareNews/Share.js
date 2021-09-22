@@ -10,7 +10,7 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
   EmailShareButton
-} from '../../../node_modules/react-share';
+} from 'react-share';
 import "./share.css";
 
 const Sharex = (props) => {

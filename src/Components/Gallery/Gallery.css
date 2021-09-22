@@ -73,18 +73,16 @@
   opacity: 0;
   transform: scale(0);
   overflow: hidden;
-  z-index: 999;
+  z-index: 1005;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5rem);
   box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.1);
-
 }
 .open {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
   margin: auto;
-
 }
 
 .model .clickImg {
@@ -94,7 +92,6 @@
   border-radius: 10%;
   align-items: center;
   margin: auto;
-  
 }
 .open svg {
   position: fixed;
@@ -107,7 +104,6 @@
   background-color: black;
   color: #f9224b;
   cursor: pointer;
-  
 }
 .parent .title {
   font-family: "Teko", sans-serif;

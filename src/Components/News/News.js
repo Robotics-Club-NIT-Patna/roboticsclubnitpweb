@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
-import Sharex from './Share'
-
-
-
-
-
-import "./styles.css";
-import SliderNews from "./SliderNews";
+import Sharex from './ShareNews/Share'
+import "./News.css";
 
 const blogsdata = [
   {
@@ -31,7 +25,7 @@ const blogsdata = [
   },
   {
     blogid: 3,
-    title: "How useful have robots been during this Pandemic ?",
+    blogTitle: "How useful have robots been during this Pandemic?",
     bloglink: "/news/blog3",
     blogThumbLink: "https://images.news18.com/ibnlive/uploads/2021/01/1611812585_untitled-design-2021-01-28t111232.738.jpg?impolicy=website&width=0&height=0",
     tempContent: "We all know that its COVID time. Nobody can touch each other. Think of a thing, even when it touches we don't have risk, but",
@@ -90,7 +84,7 @@ const News = () => {
   return (
 
     <div className="news_parent">
-      <img className="waveUp" src={waveUp} />
+      <img className="waveUp" src={waveUp} alt="" />
 
       <Sharex
         show={showSharex}
@@ -112,7 +106,7 @@ const News = () => {
               <li>
                 <a href={obj.bloglink}>
                   <div className="blog_thumb">
-                    <img src={obj.blogThumbLink} alt="Blog Image" title={obj.blogTitle} />
+                    <img src={obj.blogThumbLink} alt="Blog" title={obj.blogTitle} />
                     <span>Robotica</span>
                   </div>
                 </a>
@@ -122,8 +116,8 @@ const News = () => {
                     <p>{obj.tempContent}...</p>
                   </a>
                   <div className="share_date">{obj.blogDate}
-                    <a title="Share this blog" onClick={() => handleSharex(i)} style={{ cursor: "pointer" }}>
-                      <span className="share_dev">Share <i className="fa fa-share"></i></span></a>
+                    <a title="Share this blog"  style={{ cursor: "pointer" }}></a>
+                    <div onClick={() => handleSharex(i)} className="share_dev"><a>Share <i className="fa fa-share"></i></a></div>
                   </div>
                 </article>
               </li>
@@ -133,7 +127,7 @@ const News = () => {
 
         </ul>
       </div>
-      <img className="waveDown" src={waveDown} />
+      <img className="waveDown" src={waveDown} alt="" />
     </div>
 
 
