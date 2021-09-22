@@ -19,7 +19,7 @@ const Teams = () => {
                     <Card img = "/PAWAN SINGH.png" name="PAWAN SINGH" designation="Captain" link="https://www.linkedin.com/in/pawan-singh-4b3b8618b/"/>
                 </div>
                 <div data-aos="flip-right"  >
-                    <Card img = "/shivam tyagi.png" name="SHIVAM TYAGI" designation="Treasurer" link="https://www.linkedin.com/in/shivam-tyagi-57b7341a6/"/>
+                    <Card img = "/shivam tyagi.png" name="SHIVAM TYAGI" designation="Web Coordinator" link="https://www.linkedin.com/in/shivam-tyagi-57b7341a6/"/>
                 </div>
                 <div data-aos="flip-left"  >
                     <Card img = "/MOHD ZUBAIR.png" name="MOHD. ZUBAIR" designation="Web Coordinator" link="https://www.linkedin.com/in/mohd-zubair-3349871a1/"/>
@@ -27,9 +27,7 @@ const Teams = () => {
                 <div data-aos="flip-right" data-aos-easing="ease-out">
                     <Card img = "/Srijan Jha.png" name="KUMAR SRIJAN" designation="Joint Secretary" link="https://www.linkedin.com/in/kumarsrijan8581/"/>
                 </div >
-                <div data-aos="flip-left" data-aos-easing="ease-out">
-                    <Card img = "/Divyaprakash.png" name="DIVYA PRAKASH" designation="Club Ambassador" link="https://www.linkedin.com/in/divyaprakashrx/"/>
-                </div >
+             
                 <div data-aos="flip-right" data-aos-easing="ease-out">
                     <Card img = "/NRIPENDRA.png" name="NRIPENDRA" designation="Club Ambassador" link="https://www.linkedin.com/in/nri4u/"/>
                 </div >
@@ -66,8 +64,13 @@ const Teams = () => {
                 <div data-aos="flip-left" data-aos-easing="ease-out">
                     <Card img = "/ASHUTOSH KUMAR SINGH.png" name="ASHUTOSH KUMAR SINGH" designation="PR And Promotional Lead" link="https://www.linkedin.com/in/ashutosh-kumar-singh-22279b202/"/>
                 </div >
+            
                 <div data-aos="flip-right" data-aos-easing="ease-out">
                     <Card img = "/SHREYANSHI GUPTA.png" name="SHREYANSHI GUPTA" designation="Senior Member In Technical Team" link="https://www.linkedin.com/in/shreyanshi-gupta-014a51194/"/>
+                </div >
+                
+                <div data-aos="flip-left" data-aos-easing="ease-out">
+                    <Card img = "/Divyaprakash.png" name="DIVYA PRAKASH" designation="Club Ambassador" link="https://www.linkedin.com/in/divyaprakashrx/"/>
                 </div >
                 <div data-aos="flip-left"  >
                     <Card img = "/DARSHAN JAIN.png" name="DARSHAN JAIN" designation="Web Team And PR Team" link="https://www.linkedin.com/in/darshan-jain-6190aa203"/>
