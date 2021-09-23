@@ -3,7 +3,7 @@ import waveUp from '../../SVGs/wave-8.svg'
 import waveDown from '../../SVGs/wave-5.svg'
 import Sharex from './ShareNews/Share'
 import "./News.css";
-
+import newblog from './blogs/newblog.png'
 const blogsdata = [
   {
     blogid: 1,
@@ -74,34 +74,18 @@ const blogsdata = [
 
 const News = () => {
 
-  const [showSharex, setShowSharex] = useState(false);
-  const [blogShareId, setblogShareId] = useState(0);
+  const [blogShareId, setblogShareId] = useState(-1);
   const handleSharex = (id) => {
     setblogShareId(id);
-    setShowSharex(!showSharex);
   }
-
+  var updatedBlogsData = [].concat(blogsdata).reverse() ;
   return (
-
     <div className="news_parent">
       <img className="waveUp" src={waveUp} alt="" />
-
-      <Sharex
-        show={showSharex}
-        title={"\n Read this amazing blog *" + blogsdata[blogShareId].blogTitle + "* on \n"}
-        shortInfo={blogsdata[blogShareId].tempContent}
-        shareUrl={blogsdata[blogShareId].blogShareUrl}
-      />
-      <span
-        className={showSharex ? "fa fa-close" : ""}
-        style={showSharex ? { transform : "scale(1)", position : "absolute", right : "45px", bottom : "20px", fontSize : "35px", color : "red", zIndex : "30", cursor : "pointer", transition : "0.8s"}:{ transform : "scale(0)"}}
-        onClick={() => { setShowSharex(false) }}
-        title="Close this Sharex" />
-
       <h1>Blogs</h1>
       <div className="blogs_container">
         <ul id="blog_content">
-          {blogsdata.map((obj, i) => {
+          {updatedBlogsData.map((obj, i) => {
             return (
               <li>
                 <a href={obj.bloglink}>
@@ -110,27 +94,34 @@ const News = () => {
                     <span>Robotica</span>
                   </div>
                 </a>
-                <article>
+                <article>{i===0 ? <img alt="" src={newblog} style={{width : "45%" , position : "absolute", zIndex : "30", left : "-10px", top : "-230px"}} /> : ""}
                   <a href={obj.bloglink}>
                     <h3>{obj.blogTitle}</h3>
                     <p>{obj.tempContent}...</p>
                   </a>
                   <div className="share_date">{obj.blogDate}
-                    <a title="Share this blog"  style={{ cursor: "pointer" }}></a>
-                    <div onClick={() => handleSharex(i)} className="share_dev"><a>Share <i className="fa fa-share"></i></a></div>
+                    <a title="Share this blog" onClick={() => handleSharex(i)} style={{ cursor: "pointer" }}><span  className="share_dev">Share <i className="fa fa-share"></i></span></a>
+                    
                   </div>
+                  <Sharex
+                      show={blogShareId == i}
+                      title={"\n Read this amazing blog *" + obj.blogTitle + "* on \n"}
+                      shortInfo={obj.tempContent}
+                      shareUrl={obj.blogShareUrl}
+                      style={{right : "17px"}}
+                    />
+                    <div
+                      style={blogShareId == i ? { transform: "scale(1)", position: "absolute", right: "0px", bottom: "-7px", fontSize: "20px", color: "red", zIndex: "105", cursor: "pointer", transition: "0.8s", background : "#ffb5b5", padding : "0px 5px", width : "40px", borderRadius : "0px 0px 50% 50%" } : { transform: "scale(0)" }}
+                      onClick={() => { handleSharex(-1) }}
+                      title="Close this Sharex" ><span className={blogShareId == i ? "fa fa-close" : ""}/></div>
                 </article>
               </li>
             )
           })}
-
-
         </ul>
       </div>
       <img className="waveDown" src={waveDown} alt="" />
     </div>
-
-
   );
 }
 
