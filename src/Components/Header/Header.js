@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import logo from '../../logos/logo1.png'
 import './Header.css'
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -13,6 +13,10 @@ const Header = () => {
 
     const[sidebar, setSidebar] = useState(false);
     const showSideBar = () => setSidebar(!sidebar)
+
+    useEffect(() => {
+        sidebar ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
+     }, [sidebar]);
 
     return (
         <div className="header">

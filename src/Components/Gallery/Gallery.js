@@ -163,6 +163,12 @@ const Gallery =() => {
         setTempContSrc(contSrc);
         setModel(true);
     }
+
+    useEffect(() => {
+        model ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
+     }, [model]);
+
+    
     return (
         <div className = "parent" >
             
