@@ -13,15 +13,6 @@
   align-items: center;
 }
 
-.about::before,
-.fewWords::before,
-.about::after {
-  content: "";
-  border-top: 1px solid #2f2e41;
-  width: 80vw;
-  margin: auto;
-}
-
 .aboutSVG > img,
 .fewWordsSVG > img,
 .whatWeDoSVG > img {
