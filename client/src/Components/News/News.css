@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.waveUp {
+  object-fit: cover;
+}
+
 .news_parent h1 {
   padding-left: 3rem;
   font-size: 5rem;

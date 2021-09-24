@@ -4,15 +4,15 @@
   bottom: 20px;
   width: 40px;
   height: 200px;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 5px 0 0 5px;
-  -webkit-box-shadow: 2px 2px 5px #00000085, 0px 0px 8px 8px #16161686, 0 0 10px 15px #20202085;
-          box-shadow: 2px 2px 5px #00000085, 0px 0px 8px 8px #16161686, 0 0 10px 15px #20202085;
+  box-shadow: 0px 10px 100px 2px rgba(46, 61, 98, 0.3);
+  -webkit-box-box-shadow: 0px 10px 100px 2px rgba(46, 61, 98, 0.3);
   margin: 0 !important;
   padding: 0 !important;
   z-index: 105;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -25,11 +25,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -39,8 +39,7 @@
 }
 
 .share_parent > .share_me button.react-share__ShareButton:hover {
-  background-color: #000 !important;
-  border-color: #f9224b;
+  background-color: white !important;
 }
 
 .share_parent > .share_me .share_social_icon {
@@ -55,5 +54,5 @@
 
 .share_parent.dont_show {
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }

@@ -111,7 +111,7 @@ const News = () => {
                       style={{right : "17px"}}
                     />
                     <div
-                      style={blogShareId == i ? { transform: "scale(1)", position: "absolute", right: "0px", bottom: "-7px", fontSize: "20px", color: "red", zIndex: "105", cursor: "pointer", transition: "0.8s", background : "#ffb5b5", padding : "0px 5px", width : "40px", borderRadius : "0px 0px 50% 50%" } : { transform: "scale(0)" }}
+                      style={blogShareId == i ? { transform: "scale(1)", position: "absolute", right: "0px", bottom: "-7px", fontSize: "20px", color: "red", zIndex: "105", cursor: "pointer", transition: "0.8s", background : "black", padding : "0px 5px", width : "40px", borderRadius : "0px 0px 50% 50%", borderBottom: "2px solid #f9224b", borderLeft: "2px solid #f9224b",borderRight: "2px solid #f9224b" } : { transform: "scale(0)" }}
                       onClick={() => { handleSharex(-1) }}
                       title="Close this Sharex" ><span className={blogShareId == i ? "fa fa-close" : ""}/></div>
                 </article>
