@@ -69,9 +69,7 @@ const Teams = () => {
                     <Card img = "/SHREYANSHI GUPTA.png" name="SHREYANSHI GUPTA" designation="Senior Member In Technical Team" link="https://www.linkedin.com/in/shreyanshi-gupta-014a51194/"/>
                 </div >
                 
-                <div data-aos="flip-left" data-aos-easing="ease-out">
-                    <Card img = "/Divyaprakash.png" name="DIVYA PRAKASH" designation="Club Ambassador" link="https://www.linkedin.com/in/divyaprakashrx/"/>
-                </div >
+  
                 <div data-aos="flip-left"  >
                     <Card img = "/DARSHAN JAIN.png" name="DARSHAN JAIN" designation="Web Team And PR Team" link="https://www.linkedin.com/in/darshan-jain-6190aa203"/>
                 </div>
