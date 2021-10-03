@@ -33,7 +33,7 @@ const Header = () => {
                         <Link to='/projects' onClick={showSideBar}><span>03 </span>Projects</Link>
                         <Link to='/team' onClick={showSideBar}><span>04 </span>Team</Link>
                         <Link to='/news' onClick={showSideBar} ><span>05 </span>News</Link>
-                        <Link to='/gallery' onClick={showSideBar} ><span>05 </span>Gallery</Link>
+                        <Link to='/gallery' onClick={showSideBar} ><span>06 </span>Gallery</Link>
                 </div>
                 <div className={sidebar ? "menu_right menu_right_active" : "menu_right"}>
                     <div className="clubInfo">
