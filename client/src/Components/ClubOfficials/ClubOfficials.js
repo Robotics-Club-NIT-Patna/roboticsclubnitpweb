@@ -18,11 +18,11 @@ const ClubOfficials = () => {
                     <Card link="./PAWAN SINGH.png" name="Pawan Singh" position="Captain"/>
                 </div>
                 <div data-aos="zoom-in" className="Column">
-                    <Card link="./SHAGUFTA IQBAL.png" name="Shagufta Iqbal" position="Secretary"/>
+                    <Card link="./shivam tyagi.png" name="Shivam Tyagi" position="Web Coordinator"/>
                     <Card link="./Srijan Jha.png" name="Kumar Srijan" position="Joint Secretary"/>
                 </div>
                 <div data-aos="zoom-in" className="Column">
-                    <Card link="./NRIPENDRA.png" name="Nripendra" position="Ambassador"/>
+                    <Card link="./MOHD ZUBAIR.png" name="Mohd Zubair" position="Web Team Head"/>
                 </div>
             </div>
         </div>

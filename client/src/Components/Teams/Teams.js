@@ -22,7 +22,7 @@ const Teams = () => {
                     <Card img = "/shivam tyagi.png" name="SHIVAM TYAGI" designation="Web Coordinator" link="https://www.linkedin.com/in/shivam-tyagi-57b7341a6/"/>
                 </div>
                 <div data-aos="flip-left"  >
-                    <Card img = "/MOHD ZUBAIR.png" name="MOHD. ZUBAIR" designation="Web Coordinator" link="https://www.linkedin.com/in/mohd-zubair-3349871a1/"/>
+                    <Card img = "/MOHD ZUBAIR.png" name="MOHD ZUBAIR" designation="Web Team Head" link="https://www.linkedin.com/in/mohd-zubair-3349871a1/"/>
                 </div>
                 <div data-aos="flip-right" data-aos-easing="ease-out">
                     <Card img = "/Srijan Jha.png" name="KUMAR SRIJAN" designation="Joint Secretary" link="https://www.linkedin.com/in/kumarsrijan8581/"/>
