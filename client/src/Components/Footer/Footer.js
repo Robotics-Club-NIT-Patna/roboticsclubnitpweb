@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="FooterElementMiddle">
                 <h1>Stay Tuned To Our Upcoming Events</h1>
                 <div>
-                    <p>Hack O Heist</p>
+                    <p><a href="https://hack.roboticsnitp.online" lable="_blank">Hack O Heist</a></p>
                     <p>Abhiyuthan</p>
                 </div>
                 
