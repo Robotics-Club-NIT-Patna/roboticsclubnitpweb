@@ -38,6 +38,7 @@
   border: 5px solid white;
   transition: all 500ms ease;
   object-fit: cover;
+  height: 165px;
 }
 
 .social {
