@@ -10,6 +10,9 @@
   background-color: transprent;
   left: auto;
 }
+.display-invisible{
+ opacity: 0;
+}
 
 .headercontainer {
   display: flex;

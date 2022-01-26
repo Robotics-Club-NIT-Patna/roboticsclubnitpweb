@@ -12,7 +12,19 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     const[sidebar, setSidebar] = useState(false);
+    const [colorChange, setColorchange] = useState(false);
     const showSideBar = () => setSidebar(!sidebar)
+
+    const changeNavbarColor = () =>{
+     if(window.scrollY >= 100){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+
+  window.addEventListener('scroll', changeNavbarColor);
 
     useEffect(() => {
         sidebar ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
@@ -21,7 +33,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="headercontainer">
-                <img src={logo} className="medium" alt="logo"/>
+                <img src={logo} className={colorChange?"medium display-invisible":"medium"} alt="logo"/>
                 <div className="hamburger" onClick={showSideBar}>
                     <div className={sidebar ? "normal active_normal" : "normal"}></div>
                     <div className={sidebar ? "active_fade" : "fade"}></div>
