@@ -17,6 +17,7 @@ import Footer from './Components/Footer/Footer';
 import Carousel from './Components/EventsCarousel/Carousel';
 import ClubOfficials from './Components/ClubOfficials/ClubOfficials';
 import Notification from './Components/Notification/Notification';
+import Project from './Components/Projects/Project';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -70,6 +71,9 @@ function App() {
 
       <Route  exact path='/gallery'>
         <Gallery />
+      </Route>
+      <Route  exact path='/projects'>
+        <Project />
       </Route>
 
     </Switch>
