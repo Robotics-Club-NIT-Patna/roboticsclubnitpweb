@@ -13,7 +13,7 @@ function ProjectCard({heading,imageUrl,discription}){
         <div className='project_cardtitle'>
           <h3>{heading}</h3>
         </div>
-        <div className='project_cardbody' style={status?{overflow:null}:{overflow:"hidden" , height: "10vh"}}>{
+        <div className='project_cardbody' style={status?{overflow:null}:{overflow:"hidden" , height: "12.5vh" ,transform: "ease-in-out" , transition:"0.3s"}}>{
           <p>{discription}</p> 
         }
           

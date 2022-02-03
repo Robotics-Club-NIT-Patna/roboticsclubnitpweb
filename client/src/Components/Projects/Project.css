@@ -5,3 +5,40 @@
 .project_back{
     background-color: black;
 }
+.grid{
+    margin: 0 -5px;
+    display: inline-grid;
+   grid-template-columns: repeat(3,1fr);
+   justify-content: center;
+    
+}
+
+.cardColumn{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+  @media (max-width: 748px) {
+    .grid{
+        margin: 0 -5px;
+        display: inline-grid;
+       grid-template-columns: repeat(2,1fr);
+        
+    }
+  }
+  @media (max-width: 480px) {
+    .grid{
+        margin: 0 -5px;
+        display: inline-grid;
+       grid-template-columns: repeat(1,1fr);
+       margin-bottom: 40px;
+        
+    }
+    .cardColumn{
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+  }
