@@ -16,9 +16,10 @@
 }
 
 .blog_parent .blog_title {
-  margin: 20px 0 10px;
+  margin: 20px 0 40px;
   color: #fd6e6e;
   font-family: "Teko", sans-serif;
+  font-size: 3.5rem;
 }
 
 .blog_parent .blog_image {
@@ -85,4 +86,10 @@
   text-shadow: 5px 5px 15px rgb(0, 0, 0), 10px 10px 20px #333;
   transition: 0.8s;
   z-index: 30;
+}
+
+@media screen and (max-width:768px) {
+  .blog_parent{
+    padding-top: 8rem;
+  }
 }

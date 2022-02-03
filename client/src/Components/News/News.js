@@ -78,7 +78,7 @@ const News = () => {
   const handleSharex = (id) => {
     setblogShareId(id);
   }
-  var updatedBlogsData = [].concat(blogsdata).reverse() ;
+  var updatedBlogsData = [].concat(blogsdata) ;
   return (
     <div className="news_parent">
       <img className="waveUp" src={waveUp} alt="" />

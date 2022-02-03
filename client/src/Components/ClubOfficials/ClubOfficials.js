@@ -23,7 +23,7 @@ const ClubOfficials = () => {
           <Card
             link="./bharat.png"
             name="Dr. Bharat Gupta"
-            position="faculty Advisor"
+            position="Faculty Advisor"
           />
           <Card
             link="./PAWAN SINGH.png"
