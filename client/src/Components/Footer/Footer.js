@@ -59,6 +59,13 @@ const Footer = () => {
         <h1>Stay Tuned To Our Upcoming Events</h1>
         <div>
           <a
+            href="/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Freshers' Orientation
+          </a>
+          <a
             href="https://hack.roboticsnitp.online"
             rel="noreferrer"
             target="_blank"

@@ -413,7 +413,7 @@ const Teams = () => {
           <Card
             img="/SUDHANSHU RANJAN.png"
             name="SUDHANSHU RANJAN"
-            designation="Technical Team"
+            designation="Technical & Web Team"
             link="https://www.linkedin.com/in/sudhanshu-ranjan-a1779b202"
           />
         </div>
@@ -424,6 +424,15 @@ const Teams = () => {
             name="NRIPENDRA"
             designation="Club Ambassador"
             link="https://www.linkedin.com/in/nri4u/"
+          />
+        </div>
+
+        <div data-aos="flip-right" data-aos-easing="ease-out">
+          <Card
+            img="/ABHINAY GAUTAM.png"
+            name="ABHINAY GAUTAM"
+            designation="Design Team"
+            link="https://www.linkedin.com/in/abhinay-gautam-88790b219/"
           />
         </div>
       </div>

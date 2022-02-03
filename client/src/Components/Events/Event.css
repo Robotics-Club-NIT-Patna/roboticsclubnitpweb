@@ -114,11 +114,11 @@
   margin-left: 25px;
 }
 .know-more-event {
-  border-radius: 4px;
+  border-radius: 0.6rem;
   background-color: #f9224b;
   color: white;
   font-size: 16px;
-  padding: 10px;
+  padding: 0.5rem 2rem;
   cursor: pointer;
   margin: 5px;
 }
