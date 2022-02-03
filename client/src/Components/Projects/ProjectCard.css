@@ -69,17 +69,20 @@
   border: 0;
   background: black;
 }
+.project_button:focus{
+  outline: none;
+}
 @media (max-width: 748px){
   .project_cardparent{
-    width: 50vw;
-  
+    width: 65vw;
     align-items: center;
     overflow: hidden;
-    background-color: #f9224b;
+    background-color: black;
     transition: 0.5s;
     animation: ease-in;
-    box-shadow: 0px 0px 15px -5px;
+    /* box-shadow: 0px 0px 15px -5px; */
     border-radius: 20px;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width:480px) {
@@ -89,10 +92,11 @@
     padding: auto;
     align-items: center;
     overflow: hidden;
-    background-color: #f9224b;
+    background-color: black;
     transition: 0.5s;
     animation: ease-in;
-    box-shadow: 0px 0px 15px -5px;
+    /* box-shadow: 0px 0px 15px -5px; */
     border-radius: 20px;
+    margin-bottom: 2rem;
   }
 }

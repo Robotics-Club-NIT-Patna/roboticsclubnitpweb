@@ -14,7 +14,7 @@ const Blog1 = () => {
 
     return (
         <div className="blog_parent">
-            {/* <img className="waveUp" src={waveUp} /> */}
+         <img className="waveUp" src={waveUp} /> 
 
             <Sharex
                 show={showSharex}
@@ -31,7 +31,7 @@ const Blog1 = () => {
 
                 <h1 className="blog_title"> {blogTitle} </h1>
                 <div className="blog_image">
-                    <img src="https://roboticsnitp.co.in/assets/news/Month1.jpg" alt="blog image"></img>
+                    <img src="https://www.gizmodo.com.au/content/uploads/sites/2/2013/05/02/18lg2imc93o0kjpg.jpg" alt="blog image"></img>
                 </div>
                 <div className="blog_content">
                     <p>

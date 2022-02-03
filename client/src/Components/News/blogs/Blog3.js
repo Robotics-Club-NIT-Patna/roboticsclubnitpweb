@@ -14,7 +14,7 @@ const Blog3 = () => {
 
     return (
         <div className="blog_parent">
-            {/* <img className="waveUp" src={waveUp} /> */}
+             <img className="waveUp" alt="" src={waveUp} />
 
             <Sharex
                 show={showSharex}
@@ -31,7 +31,7 @@ const Blog3 = () => {
 
             <h1 className="blog_title"> {blogTitle} </h1>
             <div className="blog_image">
-                <img src="https://roboticsnitp.co.in/assets/news/Month2.jpg" alt="blog image"></img>
+                <img src="https://images.news18.com/ibnlive/uploads/2021/01/1611812585_untitled-design-2021-01-28t111232.738.jpg?impolicy=website&width=0&height=0" alt="blog"></img>
             </div>
             <div className="blog_content">
                 <p>
@@ -58,7 +58,7 @@ const Blog3 = () => {
                 This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
             </div>
             </div>
-            <img className="waveDown" src={waveDown} />
+            <img className="waveDown" alt="" src={waveDown} />
         </div>
     )
 }

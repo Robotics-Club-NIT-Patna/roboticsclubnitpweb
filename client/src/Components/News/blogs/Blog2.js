@@ -14,7 +14,7 @@ const Blog2 = () => {
 
     return (
         <div className="blog_parent">
-            {/* <img className="waveUp" src={waveUp} /> */}
+         <img className="waveUp" alt="" src={waveUp} />
 
             <Sharex
                 show={showSharex}
@@ -30,7 +30,7 @@ const Blog2 = () => {
             <div className={showSharex ? "blog_me blurbg" : "blog_me"} style={{ transition: "0.8ms" }}>
                 <h1 className="blog_title"> {blogTitle} </h1>
                 <div className="blog_image">
-                    <img src="https://roboticsnitp.co.in/assets/news/Month2.jpg" alt="blog image"></img>
+                    <img src="https://www.techsolcorp.com/wp-content/uploads/2021/06/Techsol-Pharmacovigilance-Automation.jpg" alt="blog image"></img>
                 </div>
                 <div className="blog_content">
                     <p>
@@ -60,7 +60,7 @@ const Blog2 = () => {
                     This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
                 </div>
             </div>
-            <img className="waveDown" src={waveDown} />
+            <img className="waveDown" alt="" src={waveDown} />
         </div>
     )
 }

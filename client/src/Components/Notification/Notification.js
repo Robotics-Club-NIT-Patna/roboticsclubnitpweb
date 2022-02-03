@@ -9,7 +9,7 @@ const Notification = () => {
             <div className="newsContainer" 
                 data-aos="fade-right" 
                 data-aos-offset="150">
-                    <div className="newsSVG"><img className="imgSection" src={NotificationSVG}/></div>
+                    <div className="newsSVG"><img className="imgSection" src={NotificationSVG} alt="not found" /></div>
                     <div><SliderNews/></div>   
             </div>
 

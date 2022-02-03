@@ -10,11 +10,11 @@ const Blog4 = () => {
     setShowSharex(!showSharex);
   }
   var blogTitle = "Intro to BlockChain";
-  var blogCredits = ["Name", "Branch", "RollNo"];
+   var blogCredits = ["Name", "Branch", "RollNo"];
 
   return (
     <div className="blog_parent" >
-      {/* <img className="waveUp" src={waveUp} /> */}
+      <img className="waveUp" alt="" src={waveUp} />
 
       <Sharex
         show={showSharex}
@@ -30,7 +30,7 @@ const Blog4 = () => {
       <div className={showSharex ? "blog_me blurbg" : "blog_me"} style={{ transition: "0.8ms" }}>
         <h1 className="blog_title"> {blogTitle} </h1>
         <div className="blog_image">
-          <img src="https://roboticsnitp.co.in/assets/news/Month4.jpg" alt="blog image"></img>
+          <img src="https://img.freepik.com/free-photo/cryptocurrency-coding-digital-black-background-open-source-blockchain-concept_53876-124641.jpg?size=626&ext=jpg" alt="blog"></img>
         </div>
         <div className="blog_content">
           <p>
@@ -45,11 +45,13 @@ const Blog4 = () => {
             And smaller network might not be that secure anyway, since its easier for bad actors to take control over 51 percent of the nodes. All this means that is a really cool and clever idea that hasn’t found its niche yet. Give It a few years for the systems to advance and for the laws to mature ..and we re ..and we re ..and we may one day rely on blockchains without even realising it.
           </p>
         </div>
-        <div className="blog_credits">
+        
+          <div className="blog_credits">
           This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
-        </div>
+        </div>     
+       
       </div>
-      <img className="waveDown" src={waveDown} />
+      <img className="waveDown" src={waveDown} alt="not found"/>
     </div>
   )
 }
