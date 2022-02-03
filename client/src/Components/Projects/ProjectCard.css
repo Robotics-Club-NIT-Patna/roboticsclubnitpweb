@@ -3,11 +3,13 @@
   margin-left: 2vw;
   align-items: center;
   overflow: hidden;
-  background-color: #f9224b;
+  background-color: black;
   transition: 0.5s;
   animation: ease-in;
-  box-shadow: 0px 0px 15px -5px;
-  border-radius: 20px;
+  /* box-shadow: 0px 0px 15px -5px; */
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .project_imagecontainer:hover{
   transform: scale(1.1);
@@ -16,7 +18,9 @@
 .project_imagecontainer img{
   height: 200px;
   width: 100%;
-
+  padding: 5%;
+  
+  background-color: #f9224b;
 }
 .project_cardcontent{
   margin: 1rem;
@@ -42,19 +46,20 @@
   border: none;
   border: 0ch;
   border-color: #f9224b;
-  background-color: #f9224b;
-  color: black;
+  background-color: black;
+  color: #f9224b;
   margin-bottom: 0.5rem;
   transition: 0.2s;
   padding: 0.5rem;
   margin-top: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  border: none;
 }
 .project_button :hover{
   scale: (1.1);
   border: 0;
-  background: #f9224b;
+  background: black;
 }
 @media (max-width: 748px){
   .project_cardparent{
