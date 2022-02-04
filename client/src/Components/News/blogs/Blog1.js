@@ -10,7 +10,7 @@ const Blog1 = () => {
         setShowSharex(!showSharex);
     }
     var blogTitle = "3D Printing";
-    var blogCredits = ["Name", "Branch", "RollNo"];
+    var blogCredits = ["Srijan jha", "Electronics And Communication Engineering", "1904021"];
 
     return (
         <div className="blog_parent">
@@ -46,8 +46,8 @@ const Blog1 = () => {
                         Don’t know what lies in the future as 3D printing is reaching to a big audience now.</p>
                 </div>
                 <div className="blog_credits">
-                    This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
-                </div>
+            This article was contributed by <b>{blogCredits[0]}</b> (<b>{blogCredits[1]}</b>), Roll Number : <b>{blogCredits[2]}</b>
+          </div>     
             </div>
 
             <img className="waveDown" src={waveDown} />

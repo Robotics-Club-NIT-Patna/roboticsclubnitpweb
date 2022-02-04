@@ -10,7 +10,7 @@ const Blog2 = () => {
         setShowSharex(!showSharex);
     }
     var blogTitle = "Will Automation Lead To Mass Unemployment ?";
-    var blogCredits = ["Name", "Branch", "RollNo"];
+    var blogCredits = ["Shagufta Iqbal", "Electronics And Communication Engineering", "1904020"];
 
     return (
         <div className="blog_parent">
@@ -57,8 +57,8 @@ const Blog2 = () => {
                         </ul></p>
                 </div>
                 <div className="blog_credits">
-                    This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
-                </div>
+            This article was contributed by <b>{blogCredits[0]}</b> (<b>{blogCredits[1]}</b>), Roll Number : <b>{blogCredits[2]}</b>
+          </div>     
             </div>
             <img className="waveDown" alt="" src={waveDown} />
         </div>

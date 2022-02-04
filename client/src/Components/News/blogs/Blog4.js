@@ -46,10 +46,9 @@ const Blog4 = () => {
           </p>
         </div>
         
-          <div className="blog_credits">
-          This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
-        </div>     
-       
+        <div className="blog_credits">
+            This article was contributed by <b>{blogCredits[0]}</b> (<b>{blogCredits[1]}</b>), Roll Number : <b>{blogCredits[2]}</b>
+          </div>     
       </div>
       <img className="waveDown" src={waveDown} alt="not found"/>
     </div>

@@ -11,6 +11,9 @@ import Blog4 from './Components/News/blogs/Blog4';
 import Blog1 from './Components/News/blogs/Blog1';
 import Blog2 from './Components/News/blogs/Blog2';
 import Blog3 from './Components/News/blogs/Blog3';
+import Blog5 from './Components/News/blogs/Blog5';
+import Blog6 from './Components/News/blogs/Blog6';
+import Blog7 from './Components/News/blogs/Blog7';
 import Events from './Components/Events/Events';
 import Gallery from './Components/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
@@ -63,6 +66,15 @@ function App() {
 
       <Route  exact path='/news/blog4' >
         <Blog4/>
+      </Route>
+      <Route  exact path='/news/blog5' >
+        <Blog5/>
+      </Route>
+      <Route  exact path='/news/blog6' >
+        <Blog6/>
+      </Route>
+      <Route  exact path='/news/blog7' >
+        <Blog7/>
       </Route>
 
       <Route  exact path='/events'>
