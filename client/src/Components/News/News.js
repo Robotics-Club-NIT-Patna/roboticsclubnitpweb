@@ -8,7 +8,7 @@ const blogsdata = [
   {
     blogid: 7,
     blogTitle: "Green Computing",
-    bloglink: "/new/blog7",
+    bloglink: "/news/blog7",
     blogThumbLink: "https://sciencenode.org/feature/Greencomputer.jpg",
     tempContent: "In this developing world, we can not deny the fact that information technology has drastically improved our work and life but",
     blogDate: "15 September, 2021 ",
