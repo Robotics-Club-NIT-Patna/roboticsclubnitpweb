@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   display: grid;
+  display: -ms-grid;
   text-align: left;
   overflow: hidden;
 }

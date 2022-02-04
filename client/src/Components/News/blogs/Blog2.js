@@ -30,7 +30,7 @@ const Blog2 = () => {
             <div className={showSharex ? "blog_me blurbg" : "blog_me"} style={{ transition: "0.8ms" }}>
                 <h1 className="blog_title"> {blogTitle} </h1>
                 <div className="blog_image">
-                    <img src="https://www.techsolcorp.com/wp-content/uploads/2021/06/Techsol-Pharmacovigilance-Automation.jpg" alt="blog image"></img>
+                    <img src="https://www.techsolcorp.com/wp-content/uploads/2021/06/Techsol-Pharmacovigilance-Automation.jpg" alt="blog-img"></img>
                 </div>
                 <div className="blog_content">
                     <p>

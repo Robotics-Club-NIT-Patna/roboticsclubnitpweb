@@ -7,7 +7,7 @@ function Event(props) {
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, [])
-    const {image, description, heading, rewards} = props
+    const {image, description, heading, rewards, link} = props
     return (
         
             <div 
@@ -36,7 +36,7 @@ function Event(props) {
                                 </ul>
                             </div>
                             <div className="know-more-event__button-div">
-                                <button className="know-more-event">Register</button>
+                                <a href={link} target="_blank"><button className="know-more-event">Register</button></a>
                             </div>
                             
                         
