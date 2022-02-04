@@ -79,7 +79,7 @@ export const pastEvents = [
     image: "/HackoHeist.png",
     description:
       "An online hackathon based on the theme of Money Heist.\nA 36 hours event full hacking and building projects which can solve social and ecological daily life problems.",
-    heading: "Digital Detective",
+    heading: "Hack 0 Heist",
     rewards: [
       "Swag Kits containing Tech-Stickers and Key-chains",
       "Egghead Io’s free 1-year codes",
