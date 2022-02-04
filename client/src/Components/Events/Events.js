@@ -30,14 +30,14 @@ function Events() {
         </div>
       </div>
 
-      <h1 className="past-events">Past Events</h1>
-      <div className="sampleEventsList">
-        <EventList sampleEvents={sampleEvents} />
-      </div>
-
       <h1 className="upcoming-events">Upcoming Events</h1>
       <div className="sampleEventsList">
-        <EventList sampleEvents={sampleEvents} />
+        <EventList sampleEvents={upcomingEvents} />
+      </div>
+
+      <h1 className="past-events">Past Events</h1>
+      <div className="sampleEventsList">
+        <EventList sampleEvents={pastEvents} />
       </div>
 
       <img className="waveDown" src={waveDown} alt="" />
@@ -45,7 +45,7 @@ function Events() {
   );
 }
 
-export const sampleEvents = [
+export const pastEvents = [
   {
     id: 1,
     clicked: false,
@@ -57,32 +57,35 @@ export const sampleEvents = [
       "Egghead Io’s free 1-year codes",
       "Code for Cause Discount Coupons",
     ],
+    link:""
   },
   {
     id: 2,
     clicked: false,
-    image: "/digitaldetective.jpeg",
+    image: "/abhiyutthan.jpeg",
     description:
-      "It is basically a treasure hunt type event, but not the usual one, as it will have a technical kick.\nA 24 hours event full of mind wobbling passcode encrypted Riddles.This way the participant would have to solve some riddles and the one who would be able to crack all the riddles the fastest, would be our winner.",
-    heading: "Digital Detective",
+      "A mega event of 4 subevents, stimulated interest in the participants for the Robotics field and club.\nThis event's sole aim was to give a fun break to students from these disturbing situations and academic overloads in the most technical way possible.",
+    heading: "Abhiyutthan",
     rewards: [
       "Swag Kits containing Tech-Stickers and Key-chains",
       "Egghead Io’s free 1-year codes",
       "Code for Cause Discount Coupons",
     ],
+    link:""
   },
   {
     id: 3,
     clicked: false,
     image: "/HackoHeist.png",
     description:
-      "It is basically a treasure hunt type event, but not the usual one, as it will have a technical kick.\nA 24 hours event full of mind wobbling passcode encrypted Riddles.This way the participant would have to solve some riddles and the one who would be able to crack all the riddles the fastest, would be our winner.",
+      "An online hackathon based on the theme of Money Heist.\nA 36 hours event full hacking and building projects which can solve social and ecological daily life problems.",
     heading: "Digital Detective",
     rewards: [
       "Swag Kits containing Tech-Stickers and Key-chains",
       "Egghead Io’s free 1-year codes",
       "Code for Cause Discount Coupons",
     ],
+    link:""
   },
   {
     id: 4,
@@ -96,6 +99,34 @@ export const sampleEvents = [
       "Egghead Io’s free 1-year codes",
       "Code for Cause Discount Coupons",
     ],
+    link:""
   },
+];
+
+export const upcomingEvents = [
+  {
+    id: 1,
+    clicked: false,
+    image: "/orientation.jpeg",
+    description: "Robotics Club NIT Patna is organizing an orientaion session on 5th February 2022 , full of interactive and fun activities for Freshers.",
+    heading: "Fresher's Orientation",
+    rewards: [
+      "Chance to get featured on our Instagram Handle.",
+    ],
+    link:"https://chat.whatsapp.com/DLLY5Z8ks7l7MJz6hCGBZZ"
+  },
+  {
+    id: 2,
+    clicked: false,
+    image: "https://static4.arrow.com/-/media/arrow/images/820-x-410/u/uno-vs-mega-vs-micro.jpg",
+    description:
+      "An amazing learning session for students on Arduino.\nIntroduction to Arduino, setting up the software and working with Arduino ide, and a brief intro on sensors and their working.\nStudents will also get a proper training how they can design and simulate circuits on their own.",
+    heading: "Arduino Jam",
+    rewards: [
+      "Chance to win Swag Kits",
+      "Chance to get featured on our Instagram Handle.",
+    ],
+    link:""
+  }
 ];
 export default Events;

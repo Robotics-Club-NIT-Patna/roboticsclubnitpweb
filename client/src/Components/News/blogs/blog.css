@@ -24,11 +24,9 @@
 
 .blog_parent .blog_image {
   height: 40vh;
-  
   margin: auto ;
   justify-content: center;
   overflow: hidden;
-  
 }
 
 .blog_parent .blog_image img {
@@ -38,8 +36,8 @@
 
 .blog_parent .blog_content,
 .blog_parent .blog_credits {
-  width: 90%;
-  margin: 5%;
+  width: 70%;
+  margin:15%;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   word-spacing: 6px;
@@ -95,4 +93,20 @@
   .blog_parent{
     padding-top: 8rem;
   }
+ .blog_parent .blog_content,
+.blog_parent .blog_credits {
+  width: 80%;
+  margin:10%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  word-spacing: 6px;
+  font-size: 1.1rem;
+  text-align: left;
+}
+.blog_parent .blog_image {
+  max-height: 40vh;
+  margin: auto ;
+  justify-content: center;
+  overflow: hidden;
+}
 }

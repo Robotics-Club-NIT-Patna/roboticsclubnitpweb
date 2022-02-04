@@ -3,6 +3,11 @@ import './SliderNews.css'
 
 const newsdata = [
   {
+    title: "Robotica event",
+    content: "Robotics Club Fresher's Orientation on 5th February 2022",
+    link: "/"
+  },
+  {
     title: "Robotica blog 1",
     content: " Robotica's 1st Blog - `3D Printing` is out now ",
     link: "/news/blog1"
@@ -38,39 +43,49 @@ const newsdata = [
     link: ""
   },
   {
+    title: "Robotica event",
+    content: "Robotics Club Fresher's Orientation on 5th February 2022",
+    link: "/"
+  },
+  {
     title: "Robotica blog 1",
-    content: "3D Printing",
+    content: " Robotica's 1st Blog - `3D Printing` is out now ",
     link: "/news/blog1"
   },
   {
     title: "Robotica blog 2",
-    content: "Will Automation Lead To Mass Unemployment ?",
+    content: " Robotica's 2nd Blog - `Will Automation Lead To Mass Unemployment ?` is out now ",
     link: "/news/blog2"
   },
   {
     title: "Robotica blog 3",
-    content: "How useful have robots been during this Pandemic ?",
+    content: " Robotica's 3rd Blog - `How useful have robots been during this Pandemic ?` is out now ",
     link: "/news/blog3"
   },
   {
     title: "Robotica blog 4",
-    content: "Intro to BlockChain",
+    content: " Robotica's 4th Blog - `Intro to BlockChain` is out now ",
     link: "/news/blog4"
   },
   {
     title: "Robotica blog 5",
-    content: "Data Privacy and Data Breach",
+    content: " Robotica's 5th Blog - `Data Privacy and Data Breach` is out now ",
     link: ""
   },
   {
     title: "Robotica blog 6",
-    content: "5G Technology",
+    content: " Robotica's 6th Blog - `5G Technology` is out now ",
     link: ""
   },
   {
     title: "Robotica blog 7",
-    content: "Green Computing",
+    content: " Robotica's 7th Blog - `Green Computing` is out now ",
     link: ""
+  },
+  {
+    title: "Robotica event",
+    content: "Robotics Club Fresher's Orientation on 5th February 2022",
+    link: "/"
   },
   {
     title: "Robotica blog 1",

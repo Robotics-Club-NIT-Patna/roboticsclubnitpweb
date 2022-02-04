@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import image from '../Gallery/18.JPG'
 import './Project.css'
 import waveUp from '../../SVGs/wave-8.svg'
+import waveDown from '../../SVGs/wave-5.svg'
 
 const projects = [
       {
@@ -64,7 +65,7 @@ const Project = () => {
                 Our Projects
             </div>
       {getProjects()}
-
+    <img className="waveDown"  alt="" src={waveDown} />
   </div>
 };
 
