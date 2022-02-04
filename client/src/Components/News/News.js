@@ -6,31 +6,31 @@ import "./News.css";
 import newblog from './blogs/newblog.png'
 const blogsdata = [
   {
-    blogid: 1,
-    blogTitle: "3D Printing",
-    bloglink: "/news/blog1",
-    blogThumbLink: "https://www.gizmodo.com.au/content/uploads/sites/2/2013/05/02/18lg2imc93o0kjpg.jpg",
-    tempContent: "For once, 3D printing might seem surreal to a lot of people. All you need to do is to feed the dimensions of the structure which you wish to produce",
-    blogDate: "01 December, 2020 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news/first"
+    blogid: 7,
+    blogTitle: "Green Computing",
+    bloglink: "/new/blog",
+    blogThumbLink: "https://sciencenode.org/feature/Greencomputer.jpg",
+    tempContent: "In this developing world, we can not deny the fact that information technology has drastically improved our work and life but",
+    blogDate: "15 September, 2021 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news"
   },
   {
-    blogid: 2,
-    blogTitle: "Will Automation Lead To Mass Unemployment ?",
-    bloglink: "/news/blog2",
-    blogThumbLink: "https://www.techsolcorp.com/wp-content/uploads/2021/06/Techsol-Pharmacovigilance-Automation.jpg",
-    tempContent: "Regular reports warn us that automation apocalypse is nigh. In January 2017, a McKinsey & Company study found that",
-    blogDate: "16 December, 2020 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news/second"
+    blogid: 6,
+    blogTitle: "5G Technology",
+    bloglink: "/news/blog6",
+    blogThumbLink: "https://i2.wp.com/krazytech.com/wp-content/uploads/5G-Wireless-Technology.jpg?fit=624%2C350&ssl=1",
+    tempContent: "The introduction of the first 5G network was developed by 3GPP by South Korea. Wireless Technologies have been growing actively",
+    blogDate: "1 September, 2021 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news"
   },
   {
-    blogid: 3,
-    blogTitle: "How useful have robots been during this Pandemic?",
-    bloglink: "/news/blog3",
-    blogThumbLink: "https://images.news18.com/ibnlive/uploads/2021/01/1611812585_untitled-design-2021-01-28t111232.738.jpg?impolicy=website&width=0&height=0",
-    tempContent: "We all know that its COVID time. Nobody can touch each other. Think of a thing, even when it touches we don't have risk, but",
-    blogDate: "11 January, 2021 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news/third"
+    blogid: 5,
+    blogTitle: "Data Privacy and Data Breach",
+    bloglink: "/news/blog5",
+    blogThumbLink: "https://www.ibm.com/blogs/blockchain/wp-content/uploads/2018/05/Retina-Display-168621112.jpg",
+    tempContent: "As Data Privacy continuous to occupy the international spotlight, what Andy Grove said years ago has certainly started to make",
+    blogDate: "16 August, 2021 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news"
   },
   {
     blogid: 4,
@@ -42,33 +42,32 @@ const blogsdata = [
     blogShareUrl: "https://roboticsnitp.co.in/news/fourth"
   },
   {
-    blogid: 5,
-    blogTitle: "Data Privacy and Data Breach",
-    bloglink: "",
-    blogThumbLink: "https://www.ibm.com/blogs/blockchain/wp-content/uploads/2018/05/Retina-Display-168621112.jpg",
-    tempContent: "As Data Privacy continuous to occupy the international spotlight, what Andy Grove said years ago has certainly started to make",
-    blogDate: "16 August, 2021 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news"
+    blogid: 3,
+    blogTitle: "How useful have robots been during this Pandemic?",
+    bloglink: "/news/blog3",
+    blogThumbLink: "https://images.news18.com/ibnlive/uploads/2021/01/1611812585_untitled-design-2021-01-28t111232.738.jpg?impolicy=website&width=0&height=0",
+    tempContent: "We all know that its COVID time. Nobody can touch each other. Think of a thing, even when it touches we don't have risk, but",
+    blogDate: "11 January, 2021 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news/third"
   },
   {
-    blogid: 6,
-    blogTitle: "5G Technology",
-    bloglink: "",
-    blogThumbLink: "https://i2.wp.com/krazytech.com/wp-content/uploads/5G-Wireless-Technology.jpg?fit=624%2C350&ssl=1",
-    tempContent: "The introduction of the first 5G network was developed by 3GPP by South Korea. Wireless Technologies have been growing actively",
-    blogDate: "1 September, 2021 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news"
+    blogid: 2,
+    blogTitle: "Will Automation Lead To Mass Unemployment ?",
+    bloglink: "/news/blog2",
+    blogThumbLink: "https://www.techsolcorp.com/wp-content/uploads/2021/06/Techsol-Pharmacovigilance-Automation.jpg",
+    tempContent: "Regular reports warn us that automation apocalypse is nigh. In January 2017, a McKinsey & Company study found that",
+    blogDate: "16 December, 2020 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news/second"
   },
   {
-    blogid: 7,
-    blogTitle: "Green Computing",
-    bloglink: "",
-    blogThumbLink: "https://sciencenode.org/feature/Greencomputer.jpg",
-    tempContent: "In this developing world, we can not deny the fact that information technology has drastically improved our work and life but",
-    blogDate: "15 September, 2021 ",
-    blogShareUrl: "https://roboticsnitp.co.in/news"
-  }
-
+    blogid: 1,
+    blogTitle: "3D Printing",
+    bloglink: "/news/blog1",
+    blogThumbLink: "https://www.gizmodo.com.au/content/uploads/sites/2/2013/05/02/18lg2imc93o0kjpg.jpg",
+    tempContent: "For once, 3D printing might seem surreal to a lot of people. All you need to do is to feed the dimensions of the structure which you wish to produce",
+    blogDate: "01 December, 2020 ",
+    blogShareUrl: "https://roboticsnitp.co.in/news/first"
+  },
 
 ]
 

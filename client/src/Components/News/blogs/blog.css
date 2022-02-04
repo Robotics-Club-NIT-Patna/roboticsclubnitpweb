@@ -23,14 +23,17 @@
 }
 
 .blog_parent .blog_image {
-  height: 180px;
-  width: 90%;
-  margin: auto 5%;
+  height: 40vh;
+  
+  margin: auto ;
+  justify-content: center;
   overflow: hidden;
+  
 }
 
 .blog_parent .blog_image img {
-  width: 100%;
+  width: 80vw;
+  justify-content: center;
 }
 
 .blog_parent .blog_content,

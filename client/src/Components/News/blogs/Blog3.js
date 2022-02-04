@@ -10,7 +10,7 @@ const Blog3 = () => {
         setShowSharex(!showSharex);
     }
     var blogTitle = "How useful have robots been during this Pandemic ?";
-    var blogCredits = ["Name", "Branch", "RollNo"];
+    var blogCredits = ["Gunapriya Nallajam", "Electronics And Communication Engineering", "1904077"];
 
     return (
         <div className="blog_parent">
@@ -55,8 +55,8 @@ const Blog3 = () => {
                     This proverb was proved many times. And its proved again. Many robots have been developed to cope up with the Pandemic. And the robots now do many jobs that they didn't do earlier. There has been a lot of advancement in robots during this Pandemic and there will be, in the coming future.</p>
             </div>
             <div className="blog_credits">
-                This article is contributed by <b>{blogCredits[0]}</b> {blogCredits[1]}, Roll Number: {blogCredits[2]}
-            </div>
+            This article was contributed by <b>{blogCredits[0]}</b> (<b>{blogCredits[1]}</b>), Roll Number : <b>{blogCredits[2]}</b>
+          </div>     
             </div>
             <img className="waveDown" alt="" src={waveDown} />
         </div>
