@@ -20,7 +20,7 @@ function Event(props) {
                         <img src={image}  alt="" />
                     </div>
                     <div className="content">
-                        <h3>{heading}</h3>
+                        <h3 className='event_heading'>{heading}</h3>
                         <div className="event-card__details flex">
                             <div className="event-card__details-paragraph">
                                 <div>{description}</div>
