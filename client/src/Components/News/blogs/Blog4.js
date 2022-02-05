@@ -10,7 +10,7 @@ const Blog4 = () => {
     setShowSharex(!showSharex);
   }
   var blogTitle = "Intro to BlockChain";
-   var blogCredits = ["Name", "Branch", "RollNo"];
+   var blogCredits = ["Shivam Tyagi", "Electronics And Communication Engineering", "1904092"];
 
   return (
     <div className="blog_parent" >
