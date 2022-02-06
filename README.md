@@ -1,4 +1,4 @@
-<h1 align='center'> Robotics Club NIT, Patna 🐱‍👤 </h1>
+<h1 align='center'> Robotics Club NIT, Patna 🤖 </h1>
 Robotics club has been embodiment of innovation at NIT Patna. Being formed in year 2015-16 by Nripendra Saroj Sir, our club boasts a glorious legacy. With our members ranging from seasoned coders to brilliant designers to hardware scientists, Our members have also represented our college at Smart India hackathon, headed by our current Captain Dheeraj Kumar Sir. We have been constantly working to enhance the students’ technical skills and making them aware of the fascinating world of automation, robotics and electronics which surrounds us. Boasting of a huge roster of exciting and engaging events, This year’s techno-cultural fest was nothing less than a rollercoaster ride for us.
 
 
@@ -45,6 +45,10 @@ npm install
 In order to run the application Type the following command
 
 ```bash
+cd client
+```
+
+```bash
 npm start
 ```
 
@@ -78,8 +82,8 @@ Thanks goes to these wonderful people ❤️:
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<a href = "https://github.com/Mohdzubair3056/roboticsclubnitpweb/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=Mohdzubair3056/roboticsclubnitpweb"/>
+<a href = "https://github.com/Robotics-Club-NIT-Patna/roboticsclubnitpweb/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=Robotics-Club-NIT-Patna/roboticsclubnitpweb"/>
 </a>
 
 <!-- markdownlint-restore -->
