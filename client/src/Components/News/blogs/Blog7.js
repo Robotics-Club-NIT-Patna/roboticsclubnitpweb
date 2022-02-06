@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import waveUp from '../../../SVGs/wave-8.svg'
 import waveDown from '../../../SVGs/wave-5.svg'
 import Sharex from '../ShareNews/Share'
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import './blog.css'
 const Blog7 = () => {
 
@@ -66,6 +67,7 @@ and purchasing hardware that is less energy-intensive.
           
             <div className="blog_credits">
             This article was contributed by <b>{blogCredits[0]}</b> (<b>{blogCredits[1]}</b>), Roll Number : <b>{blogCredits[2]}</b>
+            <a href="/news" className="back-btn"><KeyboardBackspaceIcon/>{" "}Go back</a>
           </div>     
          
         </div>
