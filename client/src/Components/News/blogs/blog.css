@@ -88,6 +88,19 @@
   transition: 0.8s;
   z-index: 30;
 }
+.back-btn{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+  color: #ff3939;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.back-btn:hover{
+  color: #ff6565;
+}
 
 @media screen and (max-width:768px) {
   .blog_parent{
