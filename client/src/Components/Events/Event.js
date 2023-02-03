@@ -17,7 +17,7 @@ function Event(props) {
             >
                 <div className="card">
                     <div className="img8x_normal">
-                        <img src={image}  alt="" />
+                        <img src={image}  alt="abc"/>
                     </div>
                     <div className="content">
                         <h3 className='event_heading'>{heading}</h3>
@@ -36,7 +36,7 @@ function Event(props) {
                                 </ul>
                             </div>
                             <div className="know-more-event__button-div">
-                                <a href={link} target="_blank"><button className="know-more-event">Register</button></a>
+                                <a href={link} rel="noreferrer" target="_blank"><button className="know-more-event">Register</button></a>
                             </div>
                             
                         

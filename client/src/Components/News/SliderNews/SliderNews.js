@@ -133,7 +133,7 @@ const SliderNews = () => {
         {newsdata.map((obj, i) => {
           var pclass = "news news" + (i + 1);
           return (
-            <div className="slide">
+            <div key={i} className="slide">
               <p className={pclass}><a href={obj.link} target="_parent">{obj.content}</a></p>
             </div>
           )

@@ -4,9 +4,9 @@ import './Carousel.css'
 const Carousel = () => {
     return (
         <div className="carousel">
-            <div class="cardEventCarousel">
+            <div className="cardEventCarousel">
   
-                <div class="card_part card_part-one">
+                <div className="card_part card_part-one">
                     <h1>
                         ROBOWARS
                     </h1>
@@ -16,7 +16,7 @@ const Carousel = () => {
                 </div>
                 
 
-                <div class="card_part card_part-two">
+                <div className="card_part card_part-two">
                     <h1>
                         CHAKRAVYUH
                     </h1>
@@ -26,7 +26,7 @@ const Carousel = () => {
                 </div>
 
                 
-                <div class="card_part card_part-three">
+                <div className="card_part card_part-three">
                     <h1>
                         THE LION’S KINGDOM
                     </h1>
@@ -35,7 +35,7 @@ const Carousel = () => {
                     </h2>
                 </div>
                 
-                <div class="card_part card_part-four">
+                <div className="card_part card_part-four">
                     <h1>
                         3D printing Workshop
                     </h1>
