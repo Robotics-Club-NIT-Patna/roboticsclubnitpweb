@@ -57,6 +57,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-pdf": "^5.0.5"
+    "@types/react-pdf": "^5.0.5",
+    "webpack": "^5.75.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
