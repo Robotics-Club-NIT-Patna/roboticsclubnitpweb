@@ -33,21 +33,21 @@ const ClubOfficials = () => {
         </div>
         <div data-aos="zoom-in" className="Column">
           <Card
-            link="./NiharikaRathod.jpg"
-            name="Divya Bhardwaj"
+            link="./NiharikaRathode.jpg"
+            name="Nihariks Rathod"
             position="Secretary"
           />
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/edca40780d62cf8ae1617c791b5aa4875200ec56-900x1200.jpg?rect=0,197,900,909"
-            name="Sudhanshu Ranjan"
-            position="Joint Secretary"
+            link="./DeepuGupta.jpg"
+            name="Deepu Kumar Gupta"
+            position="Captain"
           />
         </div>
         <div data-aos="zoom-in" className="Column">
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/69f0b817e54fae71b5c472cad3480880ebb8b37e-161x161.png"
-            name="Shubhi Singh"
-            position="Treasurer"
+            link="./KapishVarshnay.jpeg"
+            name="Kapish Varshney"
+            position="Vice Captain"
           />
         </div>
       </div>
