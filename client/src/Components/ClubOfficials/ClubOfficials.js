@@ -26,28 +26,28 @@ const ClubOfficials = () => {
             position="Faculty Advisor"
           />
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/4b0b4ef30723cedef42eb5babb7d52258db4339e-161x161.png"
+            link="./DarshanJain.jpg"
             name="Darshan Jain"
+            position="President"
+          />
+        </div>
+        <div data-aos="zoom-in" className="Column">
+          <Card
+            link="./NiharikaRathode.jpg"
+            name="Nihariks Rathode"
+            position="Secretary"
+          />
+          <Card
+            link="./DeepuGupta.jpg"
+            name="Deepu Gupta"
             position="Captain"
           />
         </div>
         <div data-aos="zoom-in" className="Column">
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/c46728beb9abb7fe05e77d153081d440d4719d3d-161x161.png"
-            name="Divya Bhardwaj"
-            position="Secretary"
-          />
-          <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/edca40780d62cf8ae1617c791b5aa4875200ec56-900x1200.jpg?rect=0,197,900,909"
-            name="Sudhanshu Ranjan"
-            position="Joint Secretary"
-          />
-        </div>
-        <div data-aos="zoom-in" className="Column">
-          <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/69f0b817e54fae71b5c472cad3480880ebb8b37e-161x161.png"
-            name="Shubhi Singh"
-            position="Treasurer"
+            link="./KapishVarshnay.jpeg"
+            name="Kapish Varshnay"
+            position="Vice Captain"
           />
         </div>
       </div>
