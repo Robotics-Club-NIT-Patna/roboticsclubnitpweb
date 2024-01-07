@@ -34,7 +34,7 @@ const ClubOfficials = () => {
         <div data-aos="zoom-in" className="Column">
           <Card
             link="./NiharikaRathode.jpg"
-            name="Nihariks Rathod"
+            name="Niharika Rathod"
             position="Secretary"
           />
           <Card
