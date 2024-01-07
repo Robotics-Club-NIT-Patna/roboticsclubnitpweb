@@ -26,14 +26,14 @@ const ClubOfficials = () => {
             position="Faculty Advisor"
           />
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/4b0b4ef30723cedef42eb5babb7d52258db4339e-161x161.png"
+            link="./DarshanJain.jpg"
             name="Darshan Jain"
-            position="Captain"
+            position="President"
           />
         </div>
         <div data-aos="zoom-in" className="Column">
           <Card
-            link="https://cdn.sanity.io/images/58siqeyu/production/c46728beb9abb7fe05e77d153081d440d4719d3d-161x161.png"
+            link="./NiharikaRathod.jpg"
             name="Divya Bhardwaj"
             position="Secretary"
           />
