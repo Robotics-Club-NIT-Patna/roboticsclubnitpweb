@@ -34,19 +34,19 @@ const ClubOfficials = () => {
         <div data-aos="zoom-in" className="Column">
           <Card
             link="./NiharikaRathode.jpg"
-            name="Nihariks Rathode"
+            name="Niharika Rathod"
             position="Secretary"
           />
           <Card
             link="./DeepuGupta.jpg"
-            name="Deepu Gupta"
+            name="Deepu Kumar Gupta"
             position="Captain"
           />
         </div>
         <div data-aos="zoom-in" className="Column">
           <Card
             link="./KapishVarshnay.jpeg"
-            name="Kapish Varshnay"
+            name="Kapish Varshney"
             position="Vice Captain"
           />
         </div>
